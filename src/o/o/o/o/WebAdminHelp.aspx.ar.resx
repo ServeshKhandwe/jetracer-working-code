@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Title00" type="System.String">
+    <value>علامة تبويب "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="WebSiteAdministrationToolOverview01" type="System.String">
+    <value>نظرة عامة على "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="WebSiteAdministrationToolOverview02" type="System.String">
+    <value></value>
+  </data>
+  <data name="Introduction01" type="System.String">
+    <value>مقدمة</value>
+  </data>
+  <data name="Introduction02" type="System.String">
+    <value>تسمح لك أداة إدارة مواقع ويب بعرض تركيب موقع الويب وإدارته من خلال واجهة ويب بسيطة.</value>
+  </data>
+  <data name="TabsandAdditionalInformation01" type="System.String">
+    <value>علامات التبويب والمعلومات الإضافية</value>
+  </data>
+  <data name="TabsandAdditionalInformation02" type="System.String">
+    <value>توفر الارتباطات التالية مزيد من المعلومات حول كيفية العمل باستخدام "أداة إدارة مواقع الويب":</value>
+  </data>
+  <data name="TabsandAdditionalInformation03" type="System.String">
+    <value>علامة التبويب "أمان" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="TabsandAdditionalInformation04" type="System.String">
+    <value>علامة التبويب "تطبيق" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="TabsandAdditionalInformation05" type="System.String">
+    <value>علامة التبويب "موفر" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="TabsandAdditionalInformation06" type="System.String">
+    <value>الأجزاء الداخلية "لأداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="WebSiteConfiguration01" type="System.String">
+    <value>تكوين موقع الويب</value>
+  </data>
+  <data name="WebSiteConfiguration02" type="System.String">
+    <value>يتم تخزين إعدادات تكوين موقع الويب في ملف XML يُسمى Web.config، وهو موجود في المجلد الجذر الخاص بموقع الويب. تتيح لك "أداة إدارة مواقع الويب" تغيير تكوين الموقع الخاص بك بدون الحاجة إلى تحرير ملف Web.config يدويًا. عند استخدام "أداة إدارة مواقع الويب" لأول مرة في إدارة موقع معين، في حالة عدم وجود ملف Web.config، تقوم "أداة إدارة مواقع الويب" بإنشاء واحد. تبعًا للإعدادات الافتراضية، تقوم "أداة إدارة مواقع الويب" أيضًا بإنشاء قاعدة بيانات في المجلد App_Data الخاص بموقع الويب لتخزين بيانات خدمات التطبيق، مثل العضوية ومعلومات الأدوار. بالنسبة لأغلب الإعدادات، يسري تأثير التغييرات التي تم إجراؤها في الحال وينعكس تأثيرها على ملف Web.config.</value>
+  </data>
+  <data name="InheritedSettings01" type="System.String">
+    <value>الإعدادات الموروثة</value>
+  </data>
+  <data name="InheritedSettings02" type="System.String">
+    <value>يتم اكتساب الإعدادات الافتراضية الخاصة بأي موقع ويب تلقائيًا من أي ملفات تكوين موجودة لأي جهاز كمبيوتر أو لخادم الويب ككل. على سبيل المثال، قد يكون لخادم الويب إعدادات افتراضية تسري على كافة المواقع الموجودة على هذا الخادم. وباستخدام "أداة إدارة مواقع الويب"، يمكنك إنشاء إعدادات غير موروثة لموقع الويب الخاص بك أو تعديلها، ويمكنك تجاوز الإعدادات الموروثة بالشكل المسموح به بواسطة الإعدادات التي تسري على موقع الويب بأكمله. إذا كان الإعداد موروثًا ولا يمكن تجاوزه، يظهر الإعداد باهتًا، للإشارة إلى أنه معطل، في "أداة إدارة مواقع الويب".</value>
+  </data>
+  <data name="Requirements01" type="System.String">
+    <value>المتطلبات</value>
+  </data>
+  <data name="Requirements02" type="System.String">
+    <value>تم إرفاق "أداة إدارة مواقع الويب" مع أداة التطوير Microsoft Visual Web Developer Web. من أجل استخدام "أداة إدارة مواقع الويب" لإدارة أحد مواقع الويب، يجب أن تحتوي بيانات الاعتماد الخاصة بحساب المستخدم الذي يتم تشغيل أداة Visual Web Developer فيه على أذونات قراءة وكتابة في ملف Web.config ومجلد App_Data الخاص بالتطبيق الذي تتم إدارته. في حالة عدم التمكن من إدارة عملية تكوين موقع الويب باستخدام "أداة إدارة موقع الويب"، يُرجى الاتصال بمسؤول النظام.</value>
+  </data>
+  <data name="Features01" type="System.String">
+    <value>الميزات</value>
+  </data>
+  <data name="Features02" type="System.String">
+    <value>تتميز "أداة إدارة مواقع الويب" بواجهة تحتوي على علامات تبويب تحتوي كل واحدة منها على أحد إعدادات التكوين المرتبطة. يتوفر شرحًا لعلامات التبويب وإعدادات التكوين التي تقوم علامات التبويب لإدارتها في الأقسام التالية.</value>
+  </data>
+  <data name="SecurityTab01" type="System.String">
+    <value>علامة التبويب أمان</value>
+  </data>
+  <data name="SecurityTab02" type="System.String">
+    <value>استخدم علامة التبويب the &lt;span class=UI&gt;الأمان&lt;/span&gt; لإدارة قواعد الوصول للمساعدة في تأمين موارد محددة داخل موقع الويب ولإدارة حسابات المستخدمين وأدوارهم. </value>
+  </data>
+  <data name="SecurityTab03" type="System.String">
+    <value>يمكنك تحديد كيفية استخدام موقع الويب. سواء من خلال الإنترنت (بشكل عام) أو من الإنترانت (على شبكة اتصال محلية). يشير هذا بدوره إلى نوع وضع المصادقة الذي سيستخدمه موقع الويب. تستخدم مواقع ويب الإنترنت نظام عضوية ASP.NET، حيث يمكنك تحديد حسابات المستخدمين الفردية. يستخدم ASP.NET نظام أمان لقصر الوصول على حسابات مستخدمين محددين أو على الأدوار التي ينتمي إليها المستخدمين. في حين تستخدم مواقع ويب الإنترانت مصادقة Windows. </value>
+  </data>
+  <data name="ApplicationTab01" type="System.String">
+    <value>علامة التبويب تطبيق</value>
+  </data>
+  <data name="ApplicationTab02" type="System.String">
+    <value>استخدم علامة التبويب &lt;span class=UI&gt;تطبيق&lt;/span&gt; لإدارة عدد متنوع من الإعدادات المرتبطة بموقع الويب، بما في ذلك ما يلي:</value>
+  </data>
+  <data name="ApplicationTab03" type="System.String">
+    <value>إعدادات التطبيق، ألا وهي أزواج الاسم/القيمة المطلوب تخزينها بشكل مركزي والوصول إلى التعليمات البرمجية من أي مكان في موقع الويب.</value>
+  </data>
+  <data name="ApplicationTab04" type="System.String">
+    <value>إعدادات SMTP، التي تحدد كيفية إرسال الموقع الخاص بك للبريد الإلكتروني.</value>
+  </data>
+  <data name="ApplicationTab05" type="System.String">
+    <value>تصحيح أخطاء الإعدادات وتتبعها.</value>
+  </data>
+  <data name="ApplicationTab06" type="System.String">
+    <value>إعدادات الاتصال وعدم الاتصال، التي تقوم بقطع اتصال موقع الويب (إغلاقه) لإجراء صيانة أو للاتصال بقاعدة بيانات Microsoft SQL Server Standard Edition جديدة.</value>
+  </data>
+  <data name="ProviderTab01" type="System.String">
+    <value>علامة التبويب موفر</value>
+  </data>
+  <data name="ProviderTab02" type="System.String">
+    <value>استخدم علامة التبويب &lt;span class=UI&gt;موفر&lt;/span&gt; لاختبار الموفرين أو تعيينهم للعضوية وإدارة الأدوار لموقع الويب. موفرو قاعدة البيانات عبارة عن فئات يتم استدعاؤها لتخزين بيانات التطبيق لميزة معينة. تبعًا للإعدادات الافتراضية، تقوم "أداة إدارة مواقع الويب" بتكوين قاعدة بيانات SQL Server Express محلية في المجلد App_Data الخاص بموقع الويب. بدلاً من ذلك، يمكنك اختيار استخدام موفر مختلف، مثل قاعدة بيانات SQL Server البعيدة، لتخزين العضوية وإدارة الأدوار.</value>
+  </data>
+  <data name="HowtoUsetheWebSiteAdministrationTool01" type="System.String">
+    <value>كيفية استخدام "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="HowtoUsetheWebSiteAdministrationTool02" type="System.String">
+    <value>يشبه استخدام "أداة إدارة مواقع الويب" استخدام مواقع الويب الأخرى المستندة إلى النماذج. يتمثل الإجراء العام في فتح "أداة إدارة مواقع الويب" وتحديد علامة التبويب المناسبة ثم ضبط الإعدادات المتوفرة في علامة التبويب تلك. يظهر تأثير معظم التغييرات مباشرة.</value>
+  </data>
+  <data name="HowtoAccesstheWebSiteAdministrationTool01" type="System.String">
+    <value>كيفية الوصول إلى "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="HowtoAccesstheWebSiteAdministrationTool02" type="System.String">
+    <value>للوصول إلى "أداة إدارة مواقع الويب" من القائمة &lt;span class=UI&gt;موقع ويب&lt;/span&gt;، انقر فوق &lt;span class=UI&gt;تكوين ASP.Net&lt;/span&gt;.</value>
+  </data>
+  <data name="Considerations01" type="System.String">
+    <value>الاعتبارات</value>
+  </data>
+  <data name="Considerations02" type="System.String">
+    <value>يوفر القسم التالي بعض الاعتبارات المتعلقة بالتعامل مع "أداة إدارة مواقع الويب".</value>
+  </data>
+  <data name="RestartingtheApplicationWhenSaving01" type="System.String">
+    <value>إعادة تشغيل التطبيق عند الحفظ</value>
+  </data>
+  <data name="RestartingtheApplicationWhenSaving02" type="System.String">
+    <value>يظهر تأثير معظم تغييرات إعدادات التكوين التي يتم إجراؤها في "أداة إدارة مواقع الويب" مباشرة. وهذا يتطلب إعادة تشغيل موقع الويب الذي تم تطبيق التغييرات عليه. ونظرًا لأن ذلك سوف يؤدي إلى فقدان جلسات العمل النشطة حاليًا في موقع الويب، يجب إجراء تغييرات التكوين على إصدار مرحلي أو إصدار تطوير لموقع الويب قبل نشر هذه التغييرات على خادم الإنتاج.</value>
+  </data>
+  <data name="SavingYourSettings01" type="System.String">
+    <value>حفظ التغييرات</value>
+  </data>
+  <data name="SavingYourSettings02" type="System.String">
+    <value>يظهر تأثير معظم تغييرات إعدادات التكوين التي يتم إجراؤها في "أداة إدارة مواقع الويب" مباشرة. بالنسبة للإعدادات التي يُخصص لها زر &lt;span class=UI&gt;حفظ&lt;/span&gt; على واجهة "أداة إدارة مواقع الويب"، فإن ترك "أداة إدارة مواقع الويب" خاملة أو السماح لها بانتهاء المهلة قبل النقر فوق &lt;span class=UI&gt;حفظ&lt;/span&gt; سيؤدي إلى فقدان تغييرات إعدادات التكوين الخاصة بك.</value>
+  </data>
+  <data name="TimeOut01" type="System.String">
+    <value>المهلة </value>
+  </data>
+  <data name="TimeOut02" type="System.String">
+    <value>كإجراء يتعلق بالأمان، تنتهي مهلة "أداة إدارة مواقع الويب" بعد فترة من عدم النشاط. سيتم فقد أية إعدادات لم يظهر تأثيرها مباشرة ولم يتم حفظها. في حالة انتهاء مهلة "أداة إدارة مواقع الويب"، أغلق المستعرض الخاص بك، ثم قم بإعادة فتح "أداة إدارة مواقع الويب" في نافذة جديدة.</value>
+  </data>
+  <data name="TimeOut03" type="System.String">
+    <value>تقوم "أداة إدارة مواقع الويب" بإدارة فقط بعض إعدادات التكوين المتوفرة لموقع الويب. تتطلب العديد من الإعدادات الأخرى إجراء تعديل مباشر لملفات التكوين إما يدويًا، باستخدام الأداة الإضافية لـ Microsoft Management Console (MMC) الخاصة بـASP.NET، أو برمجيًا، باستخدام واجهة برمجة التطبيقات لتكوين ASP.NET.</value>
+  </data>
+  <data name="SeeAlso01" type="System.String">
+    <value>راجع أيضًا</value>
+  </data>
+  <data name="SeeAlso02" type="System.String">
+    <value>علامة التبويب "أمان" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso03" type="System.String">
+    <value>علامة التبويب "تطبيق" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso04" type="System.String">
+    <value>علامة التبويب "موفر" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso05" type="System.String">
+    <value>الأجزاء الداخلية "لأداة إدارة مواقع الويب"</value>
+  </data>
+</root>

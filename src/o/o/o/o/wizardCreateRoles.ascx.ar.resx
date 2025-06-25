@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="AddRole" type="System.String">
+    <value>إضافة دور</value>
+  </data>
+  <data name="AreYouSure" type="System.String">
+    <value>هل ترغب بالفعل في حذف الدور &lt;b&gt;{0}&lt;/b&gt;؟  </value>
+  </data>
+  <data name="CreateNewRole" type="System.String">
+    <value>إنشاء دور جديد</value>
+  </data>
+  <data name="Delete" type="System.String">
+    <value>حذف</value>
+  </data>
+  <data name="DeleteRole" type="System.String">
+    <value>حذف الدور</value>
+  </data>
+  <data name="EnableRolesCheck" type="System.String">
+    <value>تمكين الأدوار لموقع الويب هذا.</value>
+  </data>
+  <data name="ExistingRoles" type="System.String">
+    <value>الأدوار الموجودة</value>
+  </data>
+  <data name="Instructions" type="System.String">
+    <value>&lt;b&gt;تعريف الأدوار&lt;/b&gt;&lt;br&gt;&lt;br&gt;يمكنك اختياريًا إضافة أدوار أو مجموعات من شأنها أن تسمح أو لا تسمح بوصول مجموعات المستخدمين إلى مجلدات معينة في موقع الويب. على سبيل المثال، يمكنك إنشاء أدوار مثل "مديرون" أو "مبيعات" أو "أعضاء" وكل منها يمتلك صلاحية وصول مختلفة إلى المجلدات. يمكنك فيما بعد إضافة مستخدمين إلى الأدوار وسيمتلك المستخدمون أذونات الوصول المرتبطة بهذه الأدوار &lt;br&gt;&lt;br&gt;قم بكتابة اسم الدور المطلوب إنشاؤه، ثم انقر فوق "إضافة دور". &lt;br&gt;&lt;br&gt;إذا لم تكن تريد إنشاء أدوار، الرجاء التأكد من أن خانة الاختيار الموجودة أدناه غير محددة، ثم انقر فوق "التالي" لتخطي هذه الخطوة.&lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="NewRoleName" type="System.String">
+    <value>اسم دور جديد:</value>
+  </data>
+  <data name="RolesEnabled" type="System.String">
+    <value>تم تمكين الأدوار لموقع الويب هذا.</value>
+  </data>
+</root>

@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find jetracer)/launch/jetracer.launch" />
+ 
+    <node pkg="barrier_function" type="motion_capture.py" name="motion_capture" output="screen"/>
+  </launch>

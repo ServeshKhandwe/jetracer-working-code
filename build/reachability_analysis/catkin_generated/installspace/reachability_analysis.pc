@@ -1,0 +1,8 @@
+prefix=/home/jetson/catkin_ws/install
+
+Name: reachability_analysis
+Description: Description of reachability_analysis
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy sensor_msgs geometry_msgs nav_msgs std_msgs

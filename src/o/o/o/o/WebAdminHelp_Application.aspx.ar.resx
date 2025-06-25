@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Title00" type="System.String">
+    <value>علامة التبويب "تطبيق" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="WebSiteAdministrationToolApplicationTab01" type="System.String">
+    <value>علامة التبويب "تطبيق" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="WebSiteAdministrationToolApplicationTab02" type="System.String">
+    <value>استخدم علامة التبويب &lt;span class=UI&gt;تطبيق&lt;/span&gt; الخاصة بأداة إدارة مواقع الويب (أداة إدارة مواقع الويب) لإدارة الإعدادات المستخدمة بصفة عامة والمتعلقة بتطبيق الويب والموقع.</value>
+  </data>
+  <data name="Introduction01" type="System.String">
+    <value>مقدمة</value>
+  </data>
+  <data name="Introduction02" type="System.String">
+    <value>استخدم علامة التبويب &lt;span class=UI&gt;تطبيق&lt;/span&gt; لإدارة ما يلي:</value>
+  </data>
+  <data name="Introduction03" type="System.String">
+    <value>أزواج قيم/أسماء إعدادات التطبيق. </value>
+  </data>
+  <data name="Introduction04" type="System.String">
+    <value>إعدادات التطبيق عبارة عن أزواج الاسم/القيمة التي تمثل نص قيم قابلة للتكوين في تطبيق الويب. استخدم إعدادات التطبيق لتخزين معلومات تكوين تطبيق مخصصة، مثل مسارات الملف أو عناوين URL لخدمة ويب XML أو النص المستخدم بصورة عامة أو أي معلومات تريد الاحتفاظ بها في موقع مركزي ويمكن تغييرها بسهولة.</value>
+  </data>
+  <data name="Introduction05" type="System.String">
+    <value>هام   يتم تخزين إعدادات التطبيق في ملف التكوين كنص عادي. لهذا، يجب اتخاذ إجراءات الأمان المناسبة عند استخدام إعدادات التطبيق. لا تخزن المعلومات الحساسة مثل أسماء المستخدمين وكلمات المرور وسلاسل اتصال قواعد البيانات في إعدادات التطبيق.</value>
+  </data>
+  <data name="Introduction06" type="System.String">
+    <value>إعدادات Simple Mail Transfer Protocol (SMTP).</value>
+  </data>
+  <data name="Introduction07" type="System.String">
+    <value>إذا كان موقع الويب يتطلب إمكانية إرسال بريد إلكتروني (على سبيل المثال، لإرسال كلمة مرور إلى المستخدمين)، يجب تحديد خادم SMTP الذي يستخدمه الموقع الخاص بك.</value>
+  </data>
+  <data name="Introduction08" type="System.String">
+    <value>حالة التطبيق.</value>
+  </data>
+  <data name="Introduction09" type="System.String">
+    <value>يمكنك تحويل التطبيق إلى غير متصل (إغلاقه) من أجل إجراء الصيانة أو لتوصيل قاعدة بيانات جديدة لإصدار Microsoft SQL Server Express.</value>
+  </data>
+  <data name="Introduction10" type="System.String">
+    <value>تصحيح الأخطاء والتتبع.</value>
+  </data>
+  <data name="Introduction11" type="System.String">
+    <value>يتيح لك تصحيح الأخطاء وتعقبها تشخيص مشكلة تطبيق الويب وإصلاحها، وهذه العمليات خاصة بمرحلة التطوير أساسًا. سيتسبب تمكين تصحيح الأخطاء في تجميع الصفحات الخاصة بموقع الويب مع المعلومات التي يمكن أن يستخدمها مصحح أخطاء .NET Framework أو Microsoft Visual Studio للتعرف على التعليمات البرمجية الخاصة بك. كما سيؤدي تمكين التعقب إلى جعل الصفحات تقوم بإنشاء معلومات حول طلبات الويب الفردية وعناوين HTTP التي تم إرسالها مع الطلبات وحالة عناصر التحكم على الصفحة وتفاصيل أخرى حول معالجة الصفحة. </value>
+  </data>
+  <data name="ConfiguringApplicationSettings01" type="System.String">
+    <value>تكوين إعدادات التطبيق</value>
+  </data>
+  <data name="ConfiguringApplicationSettings02" type="System.String">
+    <value>عند إنشاء إعداد تطبيق، يتعين تحديد اسم وقيمة للإعداد المطلوب إنشائه. يتيح لك ذلك الوصول إلى قيمة الإعداد في التطبيق باستخدام خاصية &lt;span class=LanguageKeyword&gt;AppSettings&lt;/span&gt; الخاصة بالفئة &lt;span class=LanguageKeyword&gt;ConfigurationSettings&lt;/span&gt;. على سبيل المثال، إذا قمت بتعريف إعداد تطبيق يُسمى AppName بقيمة تمثل اسم التطبيق الخاص بك، يجب استخدام هذا الإعداد لتعيين رأس صفحة كما هو موضح في مثال التعليمات البرمجية التالي.</value>
+  </data>
+  <data name="ConfiguringApplicationSettings03" type="System.String">
+    <value>[Visual Basic]</value>
+  </data>
+  <data name="ConfiguringApplicationSettings04" type="System.String">
+    <value></value>
+  </data>
+  <data name="ConfiguringApplicationSettings05" type="System.String">
+    <value>[C#]</value>
+  </data>
+  <data name="TakingApplicationsOfflineandOnline01" type="System.String">
+    <value>تحويل حالة التطبيقات إلى غير متصل ومتصل</value>
+  </data>
+  <data name="TakingApplicationsOfflineandOnline02" type="System.String">
+    <value>إذا أردت إجراء صيانة لموقع الويب، يمكنك تحويله إلى غير متصل. سوف يؤدي ذلك إلى إغلاق العملية التي تقوم بتشغيل موقع الويب وبهذا يتوقف الموقع عن تلقيم الصفحات. بعد ذلك يمكنك تحرير الصفحات أو الملفات الأخرى بدون احتمالية حدوث طلب لصفحة ما بينما تكون في منتصف عملية التحرير، مما قد ينتج عنه حدوث خطأ ما. يعتبر تحويل التطبيق إلى غير متصل مفيدًا أيضًا، وذلك إذا كنت تستخدم إصدار SQL Server Standard وأردت مبادلة أو إضافة ملف قاعدة بيانات .mdf إلى التطبيق. فإذا كان التطبيق في حالة تشغيل، لا يمكن إرفاق ملفات.mdf.</value>
+  </data>
+  <data name="TakingApplicationsOfflineandOnline03" type="System.String">
+    <value>عن الانتهاء من تحرير الملفات أو إضافة أو تغيير ملفات.mdf، يمكنك تحويل التطبيق إلى وضع متصل مرة أخرى.</value>
+  </data>
+  <data name="ConfiguringSMTPSettings01" type="System.String">
+    <value>تكوين إعدادات SMTP</value>
+  </data>
+  <data name="ConfiguringSMTPSettings02" type="System.String">
+    <value>تتطلب بعض ميزات موقع الويب أن يكون تطبيقك قادرًا على إرسال بريد إلكتروني. لإرسال بريد إلكتروني، يجب ان يكون لدى التطبيق صلاحية وصول إلى خادم ‏‏البروتوكول البسيط لنقل رسائل البريد (SMTP) والذي يقوم بتوجيه البريد الإلكتروني من تطبيقك إلى مستلم البريد الإلكتروني. </value>
+  </data>
+  <data name="ConfiguringSMTPSettings03" type="System.String">
+    <value>يتضمن IIS) خادم SMTP ظاهري، على الرغم من أنه غير مثبت افتراضيًا. إذا أردت أن يكون بإمكانك إرسال بريد إلكتروني من جهاز الكمبيوتر الخاص بك، يمكنك تثبيت خادم SMTP باستخدام &lt;span class=UI&gt;إضافة أو إزالة البرامج&lt;/span&gt; الموجودة في لوحة التحكم الخاصة بـ Microsoft Windows. يتوفر خادم SMTP كجزء من IIS مثل أحد مكونات Windows. بعد تثبيت خادم SMTP الخاص بـ IIS، يمكنك تكوينه باستخدام وحدة تحكم إدارة خدمات معلومات الإنترنت. لمزيد من التفاصيل حول كيفية تثبيت خادم SMTP الظاهري الخاص بـ IIS، راجع صفحة البحث الخاصة بقاعدة المعارف.</value>
+  </data>
+  <data name="ConfiguringSMTPSettings04" type="System.String">
+    <value>ملاحظة   إذا قمت بتثبيت خادم SMTP على جهاز الكمبيوتر، يجب اتخاذ احتياطات الأمان للتأكد من أن خادم SMTP ليس معرضًا للاستخدام كخادم بريد إلكتروني غير هام. للحصول على مزيد من المعلومات حول كيفية تأمين خادم SMTP الظاهري الخاص بـ IIS، انتقل إلى موقع Microsoft.com ثم ابحث عن أمان SMTP.</value>
+  </data>
+  <data name="ConfiguringSMTPSettings05" type="System.String">
+    <value>إذا لم تكن تريد تثبيت خادم SMTP الخاص بـ IIS، أو إذا كان التطبيق سيتم تشغيله على جهاز كمبيوتر مختلف، اتصل بمسؤول الشبكة أو خادم الويب للحصول على معلومات حول إعدادات التكوين الخاصة بخادم SMTP.</value>
+  </data>
+  <data name="ConfiguringSMTPSettings06" type="System.String">
+    <value>يوضح الجدول التالي إعدادات SMTP.</value>
+  </data>
+  <data name="ConfiguringSMTPSettings07" type="System.String">
+    <value>الإعداد
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings08" type="System.String">
+    <value>البيان
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings09" type="System.String">
+    <value>
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings10" type="System.String">
+    <value>اسم الخادم
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings11" type="System.String">
+    <value>اسم خادم SMTP الخاص بك. الاسم الافتراضي هو &lt;span class=code&gt;localhost&lt;/span&gt;، والذي يعني أن ASP.NET سوف يستخدم خادم SMTP على الكمبيوتر المحلي. يعتبر هذا هو خادم SMTP الظاهري الافتراضي. بخلاف هذا، يتم استخدام خادم SMTP الموجود على الشبكة.
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings12" type="System.String">
+    <value>
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings13" type="System.String">
+    <value>منفذ الخادم
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings14" type="System.String">
+    <value>المنفذ الموجود على خادم SMTP الخاص بك. القيمة الافتراضية هي 25
+.</value>
+  </data>
+  <data name="ConfiguringSMTPSettings15" type="System.String">
+    <value>
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings16" type="System.String">
+    <value>من
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings17" type="System.String">
+    <value>عنوان البريد الإلكتروني الذي سيظهر في عنوان &lt;span class=UI&gt;From:&lt;/span&gt; لرسائل البريد الإلكتروني المرسلة من موقع الويب.
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings18" type="System.String">
+    <value>
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings19" type="System.String">
+    <value>المصادقة
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings20" type="System.String">
+    <value>نوع المصادقة التي يستخدمها خادم SMTP، إن وجدت. إذا كان خادم SMTP يستخدم &lt;span class=UI&gt;مصادقة أساسية&lt;/span&gt;، قم بتوفير اسم الحساب وكلمة المرور لحساب المستخدم المخول له توجيه رسائل البريد الإلكتروني من خلال الخادم.</value>
+  </data>
+  <data name="ConfiguringSMTPSettings21" type="System.String">
+    <value>يتم تخزين اسم مستخدم وكلمة مرور &lt;span class=UI&gt;المصادقة الأساسية&lt;/span&gt; في نص واضح في ملف Web.config.
+</value>
+  </data>
+  <data name="ConfiguringSMTPSettings22" type="System.String">
+    <value>
+</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing01" type="System.String">
+    <value>تكوين تصحيح الأخطاء والتتبع</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing02" type="System.String">
+    <value>يجب أن يكون لديك بيانات اعتماد إدارية على جهاز الكمبيوتر الذي يتم تشغيل تطبيق الويب من خلاله من أجل تغيير إعدادات تصحيح الأخطاء والتتبع الخاصة به.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing03" type="System.String">
+    <value>لإدارة ميزات تصحيح الأخطاء والتتبع، انقر فوق &lt;span class=UI&gt; تكوين تصحيح الأخطاء والتتبع&lt;/span&gt;، ثم قم بتعيين الخيارات التالية:</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing04" type="System.String">
+    <value>تمكين تصحيح الأخطاء</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing05" type="System.String">
+    <value>حدد هذا الخيار لتمكين تصحيح الأخطاء لكافة الصفحات في موقع الويب. </value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing06" type="System.String">
+    <value>التقاط معلومات التتبع</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing07" type="System.String">
+    <value>حدد هذا الخيار لتمكين التتبع لكافة الصفحات الموجودة في موقع الويب. وفي حالة تحديد خانة الاختيار هذه، يتم تمكين كافة الخيارات المتبقية في الصفحة.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing08" type="System.String">
+    <value>إذا قمت بتعيين الخيار لالتقاط معلومات التعقب، يمكنك إجراء الاختيارات التالية: </value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing09" type="System.String">
+    <value>عرض معلومات التتبع في صفحات منفردة</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing10" type="System.String">
+    <value>حدد هذا الخيار لإلحاق معلومات التتبع بأسفل صفحات الويب الموجودة في الموقع. وإذا لم تعرض معلومات التتبع حول الصفحات الفردية، تظل عملية التقاط المعلومات في وضع تشغيل. ولعرض معلومات التتبع، يمكنك طلب صفحة Trace.axd لموقع الويب، والتي تعمل بمثابة عارض معلومات التتبع.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing11" type="System.String">
+    <value>الطلبات المحلية فقط</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing12" type="System.String">
+    <value>حدد هذا الخيار لعرض معلومات التتبع فقط للطلبات الصادرة من خادم الويب المضيف (localhost).</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing13" type="System.String">
+    <value>كافة الطلبات</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing14" type="System.String">
+    <value>حدد هذا الخيار لعرض معلومات التتبع من أي جهاز كمبيوتر.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing15" type="System.String">
+    <value>تحت &lt;span class=UI&gt;تحديد ترتيب فرز نتائج التتبع&lt;/span&gt;، اختر كيف تريد عرض معلومات التتبع، كما يلي:</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing16" type="System.String">
+    <value>حسب الوقت</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing17" type="System.String">
+    <value>حدد هذا الخيار لعرض معلومات التتبع بنفس ترتيب التقاطها.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing18" type="System.String">
+    <value>حسب الفئة</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing19" type="System.String">
+    <value>حدد هذا الخيار لعرض معلومات التتبع بترتيب أبجدي داخل الفئات المُعرَّفة بواسطة المستخدم.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing20" type="System.String">
+    <value>عدد طلبات التتبع المراد تخزينها مؤقتًا</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing21" type="System.String">
+    <value>أدخل عدد طلبات التتبع المراد تخزينها مؤقتًا في الخادم. يمكنك عرض المعلومات المخزنة مؤقتًا باستخدام عارض التتبع (http://server/application/trace.axd). يكون العدد الافتراضي 10 طلبات. إذا لم يتم تحدد الخيار &lt;span class=UI&gt;أحدث نتائج التتبع&lt;/span&gt;، وتم الوصول إلى الحد الأقصى، يتم تعطيل التتبع تلقائيًا.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing22" type="System.String">
+    <value>تحت &lt;span class=UI&gt;تحديد نتائج التتبع المراد تخزينها مؤقتًا&lt;/span&gt;، حدد كيف تريد عرض نتائج التتبع، كما يلي:</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing23" type="System.String">
+    <value>أحدث نتائج التتبع</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing24" type="System.String">
+    <value>حدد هذا الخيار لعرض أحدث نتائج التتبع وتجاهل بيانات التتبع القديمة التي تقع خارج الحدود المشار إليها بواسطة &lt;span class=UI&gt; عدد طلبات التتبع المراد تخزينها مؤقتًا&lt;/span&gt;.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing25" type="System.String">
+    <value>أقدم نتائج التتبع</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing26" type="System.String">
+    <value>حدد هذا الخيار لعرض بيانات التتبع للطلبات إلى أن يتم الوصول إلى &lt;span class=UI&gt;عدد طلبات التتبع المراد تخزينها مؤقتًا&lt;/span&gt;.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing27" type="System.String">
+    <value>ملاحظة   عند الانتهاء من استكشاف أخطاء موقع الويب وإصلاحها، قم بتعطيل تصحيح الأخطاء والتتبع للحصول على أفضل أداء لتطبيق الويب الخاص بك.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing28" type="System.String">
+    <value>ملاحظة أمنية  عند تمكين التعقب لصفحة ما قد تظهر معلومات التعقب على أي مستعرض يقوم بإجراء طلب للصفحة من على الخادم. ولأن التعقب يعرض معلومات حساسة، مثل قيم متغيرات الخادم، فقد يكون هذا تهديدًا أمنيًا. تأكد من تعطيل تعقب الصفحة قبل نشر تطبيق الويب على خادم الإنتاج. </value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing29" type="System.String">
+    <value>لتكوين صفحة أخطاء مخصصة لموقع الويب، انقر &lt;span class=UI&gt;تعريف صفحة الأخطاء الافتراضية&lt;/span&gt; ثم حدد ما يلي:</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing30" type="System.String">
+    <value>استخدام رسالة الخطأ الافتراضية</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing31" type="System.String">
+    <value>حدد هذا الخيار لاستخدام صفحة الأخطاء الافتراضية.</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing32" type="System.String">
+    <value>تحديد عنوان URL لاستخدامه كصفحة أخطاء افتراضية</value>
+  </data>
+  <data name="ConfiguringDebuggingandTracing33" type="System.String">
+    <value>حدد هذا الخيار لاستخدام صفحة أخطاء مخصصة، ثم اختر الصفحة المراد استخدامها.</value>
+  </data>
+  <data name="BehindtheScenes01" type="System.String">
+    <value>العمل في الخلفية</value>
+  </data>
+  <data name="BehindtheScenes02" type="System.String">
+    <value>توفر علامة التبويب &lt;span class=UI&gt;التطبيق&lt;/span&gt; واجهة ويب بسيطة لإدارة إعدادات التركيب المخزنة في ملف Web.config للتطبيق الخاص بك. </value>
+  </data>
+  <data name="ApplicationSettings01" type="System.String">
+    <value>إعدادات التطبيق</value>
+  </data>
+  <data name="ApplicationSettings02" type="System.String">
+    <value>توجد الإعدادات التي تتم إدارتها من خلال ميزة &lt;span class=UI&gt;إعدادات التطبيق&lt;/span&gt; الخاصة بعلامة التبويب &lt;span class=UI&gt;تطبيق&lt;/span&gt; في القسم &amp;lt;appSettings&amp;gt; بملف Web.config الخاص بتطبيق الويب. يعد هذا القسم من الأقسام المعرَّفة مسبقًا والذي يتم توفيره من خلال .NET Framework. وتعتبر السطور المميزة في التعليمات البرمجية التالية مثالاً لملف تكوين تم إنشاؤه بعد استخدام "أداة إدارة مواقع الويب" لإنشاء إعداد تطبيق باسم &lt;span class=code&gt;ApplicationName&lt;/span&gt;.</value>
+  </data>
+  <data name="TakingApplicationsOfflineandOnline01" type="System.String">
+    <value>تحويل حالة التطبيقات إلى غير متصل ومتصل</value>
+  </data>
+  <data name="TakingApplicationsOfflineandOnline02" type="System.String">
+    <value>يوجد الإعداد غير متصل في القسم &amp;lt;httpRuntime&amp;gt; بملف Web.config الخاص بموقع الويب. تم إنشاء السطور المميزة في التعليمات البرمجية التالية بعد استخدام "أداة إدارة مواقع الويب" لتحويل التطبيق إلى غير متصل.</value>
+  </data>
+  <data name="TakingApplicationsOfflineandOnline03" type="System.String">
+    <value>طالما تم تعطيل الإعداد &lt;span class=LanguageKeyword&gt;httpRuntime&lt;/span&gt;، لا يقوم ASP.NET بإنشاء كائن System.AppDomain للتطبيق عند استلام طلبٍ ما. وفي الواقع، لا يمكن بدء تطبيق الويب. </value>
+  </data>
+  <data name="SMTPSettings01" type="System.String">
+    <value>إعدادات SMTP</value>
+  </data>
+  <data name="SMTPSettings02" type="System.String">
+    <value>توجد الإعدادات التي تتم إداراتها من خلال ميزة &lt;span class=UI&gt;إعدادات SMTP&lt;/span&gt; الخاصة بعلامة التبويب &lt;span class=UI&gt;تطبيق&lt;/span&gt; في القسم &amp;lt;mailSettings&amp;gt; بملف Web.config الخاص بموقع الويب، ويعتبر هذا القسم فرعًا للعنصر &amp;lt;system.net&amp;gt; (وليس للعنصر &amp;lt;system.web&amp;gt;). تم إنشاء السطور المميزة في التعليمات البرمجية التالية بعد استخدام "أداة إدارة مواقع الويب" لتحديد إعدادات SMTP.</value>
+  </data>
+  <data name="DebuggingandTracing01" type="System.String">
+    <value>تصحيح الأخطاء والتتبع</value>
+  </data>
+  <data name="DebuggingandTracing02" type="System.String">
+    <value>توجد الإعدادات التي تتم إدارتها من خلال ميزة &lt;span class=UI&gt;تصحيح الأخطاء والتتبع&lt;/span&gt; الخاصة بعلامة التبويب &lt;span class=UI&gt;تطبيق&lt;/span&gt; في الأقسام &amp;lt;trace&amp;gt; و&amp;lt;compilation&amp;gt; و&amp;lt;customErrors&amp;gt; بملف Web.config. تعتبر التعليمات البرمجية التالية مثالاً لملف تكوين تم إنشاؤه بعد استخدام "أداة إدارة مواقع الويب" لتمكين كلٍ من التتبع وتصحيح الأخطاء ولإنشاء صفحة أخطاء مخصصة افتراضية.</value>
+  </data>
+  <data name="DebuggingandTracing03" type="System.String">
+    <value>في هذا المثال، تم تمكين تصحيح الأخطاء والتتبع وتم عرض التتبع في الصفحات التي يتم طلبها من خادم الويب فقط وتم فرز نتائج التتبع حسب الفئة وتم تخزين أحدث عشر نتائج تتبع مؤقتًا للعرض. بالإضافة إلى ذلك تكون صفحة الأخطاء الافتراضية هي myErrorPage.aspx.</value>
+  </data>
+  <data name="MoreInformation01" type="System.String">
+    <value>مزيد من المعلومات</value>
+  </data>
+  <data name="MoreInformation02" type="System.String">
+    <value>للحصول على مزيد من المعلومات، راجع ما يلي في مرجع فئة .NET Framework ومخطط إعدادات ASP.NET:</value>
+  </data>
+  <data name="MoreInformation03" type="System.String">
+    <value>System.Configuration.ConfigurationSettings</value>
+  </data>
+  <data name="MoreInformation04" type="System.String">
+    <value>عنصر التحويل البرمجي (مخطط إعدادات ASP.NET)</value>
+  </data>
+  <data name="MoreInformation05" type="System.String">
+    <value>عنصر customErrors (مخطط إعدادات ASP.NET)</value>
+  </data>
+  <data name="MoreInformation06" type="System.String">
+    <value>عنصر التتبع (مخطط إعدادات ASP.NET)</value>
+  </data>
+  <data name="SeeAlso01" type="System.String">
+    <value>راجع أيضًا</value>
+  </data>
+  <data name="SeeAlso02" type="System.String">
+    <value>نظرة عامة على "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="SeeAlso03" type="System.String">
+    <value>علامة التبويب "أمان" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso04" type="System.String">
+    <value>علامة التبويب "موفر" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso05" type="System.String">
+    <value>الأجزاء الداخلية "لأداة إدارة مواقع الويب"</value>
+  </data>
+</root>

@@ -1,0 +1,102 @@
+## config.yaml for SafeLLMRA Turtlebot Integration with LLM
+training:
+  learning_rate: 3e-4
+  batch_size: 256
+  epochs: 100
+  total_episodes: 1000
+  steps_per_episode: 200
+  replay_buffer_size: 100000
+  gamma: 0.99                    # Discount factor
+  tau: 0.005                     # Target network update rate
+  policy_noise: 0.2              # Target policy smoothing noise
+  noise_clip: 0.5                # Target policy smoothing noise clipping
+  policy_freq: 2                 # Delayed policy update frequency
+
+agent:
+  algorithm: "TD3"
+  state_dim_turtlebot: 30        # 8 (physical) + 18 (lidar) + 4 (goal)
+  state_dim_quadrotor: 189       
+  physical_state_dim_turtlebot: 8
+  physical_state_dim_quadrotor: 9
+
+simulation:
+  turtlebot:
+    longitudinal_velocity_range: [0.0, 0.25]
+    angular_velocity_range: [-0.5, 0.5]
+    sensors:
+      - "wheel encoders"
+      - "IMU"
+      - "planar lidar (18 measurements, 180° span)"
+  quadrotor:
+    velocity_range: "[-5, 5] per axis"
+    sensors:
+      - "IMU"
+      - "3D lidar (180 measurements, 360° horizontal, 60° vertical)"
+
+safety:
+  max_generators_in_reach_set: 10
+  planning_horizon: 3
+  noise:
+    process_noise_scale: 0.1 
+    measurement_noise_scale: 0.075
+    av_noise_scale: 0.01
+  
+  vector_noise:
+    z_w_generators_diag: [0.1, 0.1, 0.08, 0.1, 0.06, 0.06, 0.06, 0.06]
+    z_v_generators_diag: [0.075, 0.075, 0.06, 0.075, 0.01, 0.01, 0.01, 0.01]
+    z_av_generators_diag: [0.06, 0.06, 0.01, 0.06, 0.007, 0.007, 0.007, 0.007]
+
+  action_constraints:
+    turtlebot:
+      longitudinal_velocity: [0.0, 0.5]
+      angular_velocity: [-0.5, 0.5]
+    quadrotor:
+      velocity: "[-5, 5] per axis"
+      
+  safe_state_bounds: 
+    lower: [-10000.0, -10000.0, -6.28, -1000.0, -1000.0, -1000.0, -1000.0, -1000.0]
+    upper: [ 10000.0,  10000.0,  6.28,  1000.0,  1000.0,  1000.0,  1000.0,  1000.0]
+
+# Goal management configuration
+goal_manager:
+  goal_area_bounds:
+    x_min: -0.1
+    x_max: 0.1
+    y_min: -0.1
+    y_max: 0.1
+  min_goal_distance: 1.0      # Minimum distance from robot to generate goal
+  goal_tolerance: 0.2         # Distance tolerance to consider goal reached
+  goal_timeout: 100           # Maximum steps before goal times out
+
+environment:
+  obstacles: "Randomly spawned each episode"
+  goal: "Randomly spawned each episode"
+  env_type: "turtlebot" 
+
+data_collection:
+  num_trajectories: 100
+  max_steps_per_trajectory: 200
+  output_file_path: "/home/jetson/catkin_ws/src/my_robot_controller/data/collected_offline_data.npz"
+  policy_type: "random"
+  dataset_path: "/home/jetson/catkin_ws/src/my_robot_controller/data/collected_offline_data.npz"
+
+visualization:
+  enable: true          # Master switch for visualization
+  test_episodes: 100      # Number of episodes to run for visualization test
+  test_steps: 300        # Number of steps per episode for visualization test
+
+run_training: true
+run_evaluation: true
+
+## LLM settings
+llm:
+  api_key: "sk-local-wXkpeMOqLbw_veD_dDf2uiGEFvtLazKsO1Kv2f4E3lE"
+  model: "llama3:8b"                      # or "gpt-3.5-turbo"
+  base_url: "http://192.168.137.135:8000/v1"
+  max_retries: 3
+  server_ip: "192.168.137.135"          # Motion capture server IP
+
+planning:
+  plan_horizon: 3                      # Number of steps in LLM plan
+  plan_frequency: 1.0                  # Seconds between plan requests
+  step_duration: 3.0                   # Duration of each plan step (seconds)

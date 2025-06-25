@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="jetracer" pkg="jetracer" type="jetracer">
+  <param name="kp" type="int" value="350" />
+  <param name="ki" type="int" value="120" />
+  <param name="kd" type="int" value="0" />
+  <param name="servo_bias" type="int" value="0" />
+</node>
+\endverbatim
+

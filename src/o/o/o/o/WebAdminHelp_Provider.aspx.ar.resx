@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Title00" type="System.String">
+    <value>علامة التبويب "موفر" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="WebSiteAdministrationToolProviderTab01" type="System.String">
+    <value>علامة التبويب "موفر" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="WebSiteAdministrationToolProviderTab02" type="System.String">
+    <value>استخدم علامة التبويب &lt;span class=UI&gt;موفر&lt;/span&gt; الموجودة في "أداة إدارة مواقع الويب" في إدارة طريقة تخزين برنامج ASP.NET للبيانات الخاصة بميزات التطبيق، مثل حسابات المستخدمين والأدوار والإعدادات الأخرى.</value>
+  </data>
+  <data name="Introduction01" type="System.String">
+    <value>مقدمة</value>
+  </data>
+  <data name="Introduction02" type="System.String">
+    <value>يستخدم برنامج ASP.NET فئات الموفر لإدارة تخزين البيانات لميزات متنوعة، مثل العضوية وإدارة الأدوار. فئة الموفر عبارة عن مكون يكشف وظيفة معينة من وظائف برنامج ASP.NET، مثل إدارة حسابات المستخدمين في العضوية. تتطلب كل ميزة من ميزات التطبيق مخزن للبيانات. وبالرغم من أن كل فئة موفر تقوم بنفس ميزات التطبيق، يمكن لكل فئة موفر تخزين البيانات بطرق مختلفة. على سبيل المثال، يمكن لفئات الموفر المختلفة الخاصة بعضوية ASP.NET تخزين معلومات حساب المستخدم بالطرق المختلفة التالية:</value>
+  </data>
+  <data name="Introduction03" type="System.String">
+    <value>In a Microsoft SQL Server database. </value>
+  </data>
+  <data name="Introduction04" type="System.String">
+    <value>في خدمة دليل Microsoft Windows Active Directory.</value>
+  </data>
+  <data name="Introduction05" type="System.String">
+    <value>في قاعدة بيانات مستخدم مخصص.</value>
+  </data>
+  <data name="Introduction06" type="System.String">
+    <value>لا تزال كل فئة من فئات الموفر هذه تقوم بنفس المجموعة الأساسية من المهام من أجل إدارة حسابات المستخدمين وأنت تتعامل مع فئات الموفر في التطبيق الخاص بك بنفس الطريقة.</value>
+  </data>
+  <data name="ConfiguringProvidersintheWebSiteAdministrationTool01" type="System.String">
+    <value>تكوين موفرين في "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="ConfiguringProvidersintheWebSiteAdministrationTool02" type="System.String">
+    <value>تتيح لك "أداة إدارة مواقع الويب" استخدام فئات موفر مختلفة لميزات التطبيق، مثل العضوية والأدوار. يتم تثبيت ASP.NET مع فئات موفر متنوعة لكل نوع ميزة تطبيق. على سبيل المثال، يحتوي ASP.NET على فئة موفر للعضوية تقوم بتخزين المعلومات في قاعدة بيانات SQL Server (&lt;span class=LanguageKeyword&gt;AspNetSqlMembershipProvider&lt;/span&gt;)، وأخرى تقوم بتخزين معلومات العضوية في Active Directory.</value>
+  </data>
+  <data name="ManagingProviderSettings01" type="System.String">
+    <value>إدارة إعدادات الموفر</value>
+  </data>
+  <data name="ManagingProviderSettings02" type="System.String">
+    <value>يمكنك استخدام " أداة إدارة مواقع الويب" لتغيير موفري موقع الويب واختباره. يمكنك استخدام موفر فردي لميزات التطبيق أو يمكنه استخدام موفرين مختلفين متنوعين. </value>
+  </data>
+  <data name="ManagingProviderSettings03" type="System.String">
+    <value>تبعًا للإعدادات الافتراضية، تقوم " أداة إدارة مواقع الويب" باستخدام موفر &lt;span class=LanguageKeyword&gt;AspNetSqlProvider&lt;/span&gt; لكافة ميزات التطبيق.</value>
+  </data>
+  <data name="ManagingProviderSettings04" type="System.String">
+    <value>استخدم "أداة إدارة مواقع الويب" لإدارة موفري مواقع الويب بالطرق التالية:</value>
+  </data>
+  <data name="ManagingProviderSettings05" type="System.String">
+    <value>قم بإجراء تغيير من الموفر &lt;span class=LanguageKeyword&gt;AspNetSqlRoleProvider&lt;/span&gt; الافتراضي إلى الموفر &lt;span class=LanguageKeyword&gt;AspNetWindowsTokenRoleProvider&lt;/span&gt; البديل، إذا كنت تفضل استخدام مجموعات Windows محلية لتخويل الدور.</value>
+  </data>
+  <data name="ManagingProviderSettings06" type="System.String">
+    <value>حدد ما إذا كان سيتم استخدام نفس الموفر لكافة ميزات التطبيق أو سيتم استخدام موفر مختلف لكل ميزة تطبيق. بشكل عام، يتم تحديد موفرين فرديين فقط في حالة الحاجة إلى فرض تحكم دقيق على موقع تخزين المعلومات أو في حالة الاضطرار إلى استخدام موفر مختلف لميزة واحدة فقط، مثل الأدوار.</value>
+  </data>
+  <data name="SelectingaSingleProvidervs.DifferentProviders01" type="System.String">
+    <value>تحديد موفر فردي مقابل موفرين مختلفين</value>
+  </data>
+  <data name="SelectingaSingleProvidervs.DifferentProviders02" type="System.String">
+    <value>يمكنك تكوين موقع الويب لاستخدام نفس الموفر لكافة ميزات التطبيق. في هذه الحالة، يتم تخزين كافة البيانات الخاصة بالعضوية والأدوار وما إلى ذلك في مخزن بيانات فردي (عادةً قاعدة بيانات فردية). بدلاً من ذلك، يمكنك تحديد موفر مختلف لكل ميزة تطبيق. </value>
+  </data>
+  <data name="SelectingaSingleProvidervs.DifferentProviders03" type="System.String">
+    <value>في "أداة إدارة مواقع الويب"، في علامة التبويب &lt;span class=UI&gt;موفر&lt;/span&gt;، الاختيار الأول هو إذا ما كنت تريد استخدام نفس الموفر لكافة الميزات أو تحديد موفر بشكل فردي لكل ميزة تطبيق. يمكنك اختيار الخيارات التالية:</value>
+  </data>
+  <data name="SelectingaSingleProvidervs.DifferentProviders04" type="System.String">
+    <value>لتحديد موفر فردي لكافة ميزات التطبيق، انقر فوق &lt;span class=UI&gt;تحديد موفر فردي لكافة بيانات إدارة مواقع&lt;/span&gt;.</value>
+  </data>
+  <data name="SelectingaSingleProvidervs.DifferentProviders05" type="System.String">
+    <value>لتحديد موفرين لميزات تطبيق معينة، انقر فوق &lt;span class=UI&gt;تحديد موفر مختلف لكل ميزة (خيار متقدم)&lt;/span&gt;، ثم قم بتحديد موفر لكل ميزة تطبيق.</value>
+  </data>
+  <data name="ConfiguringtheSQLServerProvider01" type="System.String">
+    <value>تكوين موفر SQL Server</value>
+  </data>
+  <data name="ConfiguringtheSQLServerProvider02" type="System.String">
+    <value>إذا كنت تريد استخدام موفر SQL Server لتخزين بيانات ميزة التطبيق في قاعدة SQL Server، يجب أولاً تكوين SQL Server من خلال إنشاء قاعدة البيانات المناسبة. يحتوي ASP.NET على الأداة المساعدة لسطور الأوامر التي تسمى aspnet_regsql.exe التي تقوم بهذه المهمة لك.</value>
+  </data>
+  <data name="ConfiguringtheSQLServerProvider03" type="System.String">
+    <value>يقع الملف aspnet_regsql.exe القابل للتنفيذ في المجلد WINDOWS\Microsoft.NET\Framework\versionNumber في خادم الويب. يتم استخدام الأداة المساعدة aspnet_regsql.exe في إنشاء قاعدة بيانات SQL Server وفي إضافة الخيارات من إحدى قواعد البيانات الموجودة أو إزالتها.</value>
+  </data>
+  <data name="ConfiguringtheSQLServerProvider04" type="System.String">
+    <value>يمكنك تشغيل الملف aspnet_regsql.exe القابل للتنفيذ بدون أي من وسيطات سطر الأوامر لتشغيل معالج الذي سيقدم لك المساعدة في تحديد معلومات الاتصال لـ SQL Server وتثبيت عناصر قاعدة البيانات أو إزالتها لكافة الميزات المدعمة. يمكنك أيضًا تشغيل الملف aspnet_regsql.exe القابل للتنفيذ باعتباره أداة مساعدة لسطر الأوامر لتكوين عناصر قاعدة البيانات للميزات الفردية.</value>
+  </data>
+  <data name="ConfiguringtheSQLServerProvider05" type="System.String">
+    <value>لتشغيل معالج aspnet_regsql.exe، قم بتشغيل الملف aspnet_regsql.exe القابل للتنفيذ بدون أي من وسيطات سطر الأوامر، كما هو موضح في المثال التالي.</value>
+  </data>
+  <data name="ConfiguringtheSQLServerProvider06" type="System.String">
+    <value>لعرض التعليمات الفورية للخيارات الإضافية المتوفرة مع الأداة المساعدة aspnet_regsql.exe، استخدم الخيار /?.</value>
+  </data>
+  <data name="BehindtheScenes01" type="System.String">
+    <value>العمل في الخلفية</value>
+  </data>
+  <data name="BehindtheScenes02" type="System.String">
+    <value>تستخدم علامة التبويب &lt;span class=UI&gt;الموفر&lt;/span&gt; في إدارة إعدادات التكوين المخزنة في ملف Web.config الخاص بالتطبيق. على وجه الخصوص، الإعدادات التي تتم إدارتها من خلال علامة التبويب &lt;span class=UI&gt;الموفر&lt;/span&gt; الموجودة في المقطعين &amp;lt;membership&amp;gt; و &amp;lt;roleManager&amp;gt;  الخاصين بملف التكوين. </value>
+  </data>
+  <data name="BehindtheScenes03" type="System.String">
+    <value>التعليمات البرمجية التالية هي ملف Web.config الذي تم إنشاؤه بواسطة "أداة إدارة مواقع الويب" بعد تحديد أن الموفر &lt;span class=LanguageKeyword&gt;AspNetWindowsTokenRoleProvider&lt;/span&gt; يتم استخدامه لإدارة الأدوار.</value>
+  </data>
+  <data name="MoreInformation01" type="System.String">
+    <value>مزيد من المعلومات</value>
+  </data>
+  <data name="MoreInformation02" type="System.String">
+    <value>لمزيد من المعلومات، راجع الأقسام التالية في مرجع فئة .NET Framework ومخطط إعدادات ASP.NET:</value>
+  </data>
+  <data name="MoreInformation03" type="System.String">
+    <value>عنصر membership (مخطط إعدادات ASP.NET)</value>
+  </data>
+  <data name="MoreInformation04" type="System.String">
+    <value>عنصر ملف التعريف (مخطط إعدادات ASP.NET)</value>
+  </data>
+  <data name="MoreInformation05" type="System.String">
+    <value>عنصر roleManager (مخطط إعدادات ASP.NET)</value>
+  </data>
+  <data name="SeeAlso01" type="System.String">
+    <value>راجع أيضًا</value>
+  </data>
+  <data name="SeeAlso02" type="System.String">
+    <value>نظرة عامة على "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="SeeAlso03" type="System.String">
+    <value>علامة التبويب "أمان" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso04" type="System.String">
+    <value>علامة التبويب "تطبيق" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso05" type="System.String">
+    <value>الأجزاء الداخلية "لأداة إدارة مواقع الويب"</value>
+  </data>
+</root>

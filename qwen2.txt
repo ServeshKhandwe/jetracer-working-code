@@ -1,0 +1,329 @@
+Description: Qwen 3 almost reached the target but continued moving left
+
+roslaunch my_robot_controller safellmra_llm_controller.launch
+... logging to /home/jetson/.ros/log/40ae44dc-51d4-11f0-a349-28d0ea888533/roslaunch-nano-4gb-jp451-18471.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+WARNING: disk usage in log directory [/home/jetson/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.
+
+started roslaunch server http://nano-4gb-jp451:46077/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /jetracer/coefficient_a: -0.016073
+ * /jetracer/coefficient_b: 0.176183
+ * /jetracer/coefficient_c: -23.428084
+ * /jetracer/coefficient_d: 1500
+ * /jetracer/linear_correction: 1.0
+ * /jetracer/port_name: /dev/ttyACM0
+ * /jetracer/publish_odom_transform: False
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/debug: False
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom
+ * /robot_pose_ekf/self_diagnose: False
+ * /robot_pose_ekf/sensor_timeout: 0.5
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /rplidarNode/angle_compensate: True
+ * /rplidarNode/frame_id: laser_frame
+ * /rplidarNode/inverted: False
+ * /rplidarNode/serial_baudrate: 115200
+ * /rplidarNode/serial_port: /dev/ttyACM1
+ * /use_sim_time: False
+
+NODES
+  /
+    base_footprint_to_imu (tf/static_transform_publisher)
+    base_footprint_to_laser (tf/static_transform_publisher)
+    jetracer (jetracer/jetracer)
+    odom_ekf_node (jetracer/odom_ekf.py)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    rplidarNode (rplidar_ros/rplidarNode)
+    safellmra_llm_controller (my_robot_controller/safellmra_llm_controller.py)
+
+auto-starting new master
+process[master]: started with pid [18563]
+ROS_MASTER_URI=http://nano-4gb-jp451:11311
+
+setting /run_id to 40ae44dc-51d4-11f0-a349-28d0ea888533
+process[rosout-1]: started with pid [18608]
+started core service [/rosout]
+process[jetracer-2]: started with pid [18624]
+process[robot_pose_ekf-3]: started with pid [18627]
+process[odom_ekf_node-4]: started with pid [18639]
+process[base_footprint_to_imu-5]: started with pid [18654]
+process[rplidarNode-6]: started with pid [18681]
+SetParams
+[ INFO] [1750863254.915780773]: set robot param: p=350 i=120 d=0 linear_correction=1 servo_bias=0
+process[base_footprint_to_laser-7]: started with pid [18709]
+[ INFO] [1750863254.991389947]: set steering coefficient: a=-0.016073 b=0.176183 c=-23.4281 d=1500
+process[safellmra_llm_controller-8]: started with pid [18733]
+[ INFO] [1750863255.118535345]: output frame: odom
+[ INFO] [1750863255.191206547]: base frame: base_footprint
+[ INFO] [1750863255.225225985]: start receive message
+[ INFO] [1750863255.557406727]: RPLIDAR running on ROS package rplidar_ros, SDK Version:2.0.0
+[ INFO] [1750863255.614939313]: Initializing Imu sensor
+[ INFO] [1750863255.615617242]: Initializing Odom sensor
+[ INFO] [1750863255.630285433]: RPLIDAR MODE:A1M8
+[ INFO] [1750863255.630425332]: RPLIDAR S/N: 8592ED93C0EA98C7A0E69BF5154C4560
+[ INFO] [1750863255.630500906]: Firmware Ver: 1.29
+[ INFO] [1750863255.630565230]: Hardware Rev: 7
+[ INFO] [1750863255.634676609]: Imu sensor activated
+[ INFO] [1750863255.635127867]: Odom sensor activated
+[ INFO] [1750863255.662058840]: Kalman filter initialized with odom measurement
+[ INFO] [1750863255.681901554]: RPLidar health status : OK.
+[ INFO] [1750863255.982667594]: current scan mode: Sensitivity, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz,
+[INFO] [1750863259.261518]: Publishing combined odometry on /odom_ekf
+[INFO] [1750863268.893468]: ============================================================
+[INFO] [1750863268.917091]: SafeLLMRA LLM Controller Starting on Jetracer
+[INFO] [1750863268.940038]: ============================================================
+[INFO] [1750863268.963902]: Initializing SafeLLMRA components...
+[INFO] [1750863268.973441]: Loading configuration from: /home/jetson/catkin_ws/src/my_robot_controller/my_robot_controller/config.yaml
+[INFO] [1750863269.166703]: Configuration loaded successfully
+[INFO] [1750863269.188994]: LiDAR scaling factor set to: 1.0
+[INFO] [1750863269.197688]: Position scaling factor set to: 0.001
+[INFO] [1750863269.218879]: Step duration set to: 3.0 seconds
+[INFO] [1750863269.227997]: Plan frequency set to: 1.0 seconds
+[INFO] [1750863269.240191]: Loading dynamics model...
+[INFO] [1750863269.250945]: Dataset path: /home/jetson/catkin_ws/src/my_robot_controller/data/collected_offline_data.npz
+[INFO] [1750863269.273506]: Loading dataset...
+[INFO] [1750863270.111876]: ? Dataset loaded successfully from /home/jetson/catkin_ws/src/my_robot_controller/data/collected_offline_data.npz
+[INFO] [1750863270.121572]: Physical state dimension: 8
+[INFO] [1750863270.165440]: Training data shapes - X: (20000, 8), U: (20000, 2), X_next: (20000, 8)
+[INFO] [1750863270.174973]: Learning dynamics model from data...
+[INFO] [1750863270.185075]: Learning linear model with 20000 data points
+[INFO] [1750863270.194946]: State dim: 8, Action dim: 2
+[INFO] [1750863271.957752]: Learned A matrix shape: (8, 8)
+[INFO] [1750863271.977083]: Learned B matrix shape: (8, 2)
+[INFO] [1750863272.003407]: Residuals shape: (20000, 8)
+[INFO] [1750863272.114122]: MatrixZonotope center shape: (8, 10)
+[INFO] [1750863272.130868]: MatrixZonotope generators shape: (8, 30)
+[INFO] [1750863272.150826]: Residual statistics - mean: 0.0542, max: 0.4065
+[INFO] [1750863272.170986]: ? Learned MatrixZonotope model successfully
+[INFO] [1750863272.279245]: Initializing Safety Controller...
+[INFO] [1750863272.287942]: Initializing Goal Manager...
+[INFO] [1750863272.305052]: Initializing LLM Agent...
+[INFO] [1750863272.312771]: Initializing LLM Agent...
+[INFO] [1750863272.322649]: LLM Configuration:
+[INFO] [1750863272.330610]:   - Model: gemma3:latest
+[INFO] [1750863272.340171]:   - Base URL: http://192.168.137.135:8000/v1
+[INFO] [1750863272.347864]:   - Max retries: 3
+[INFO] [1750863272.355410]: ✓ OpenAI API key configured
+[INFO] [1750863272.371985]: Action constraints:
+[INFO] [1750863272.382479]:   - Linear velocity: [0.0, 0.5] m/s
+[INFO] [1750863272.390503]:   - Angular velocity: [-0.5, 0.5] rad/s
+[INFO] [1750863272.402011]: ✓ LLM Agent initialized successfully
+[INFO] [1750863272.410986]: ? All SafeLLMRA components initialized successfully
+[INFO] [1750863272.463011]: Setting up visualization system...
+[INFO] [1750863273.049634]: Creating visualization window...
+[INFO] [1750863283.723848]: Waiting for visualization window to be ready...
+[INFO] [1750863285.160302]: ? Visualization window is ready and visible
+[INFO] [1750863285.182135]: Starting system components...
+[INFO] [1750863285.216494]: Starting motion capture client...
+[INFO] [1750863285.223868]: ? Motion capture client started
+[INFO] [1750863285.229883]: Motion capture server IP: 192.168.137.135
+[INFO] [1750863285.247654]: Connecting to motion capture system at ws://192.168.137.135:8765
+[INFO] [1750863285.549807]: Connected to motion capture system
+[INFO] [1750863285.800803]: ? Control timers started
+[INFO] [1750863285.866423]: ? Visualization timer started
+[INFO] [1750863285.914493]: ============================================================
+[INFO] [1750863285.925411]: ? ALL SYSTEM COMPONENTS STARTED SUCCESSFULLY
+[INFO] [1750863285.945712]: SafeLLMRA LLM Controller is now ready for operation
+[INFO] [1750863285.964894]: ============================================================
+[INFO] [1750863285.981871]: SafeLLMRA LLM Controller Node started with visualization ready.
+[INFO] [1750863285.993234]: Visualization enabled. Starting main loop with plt.pause().
+[INFO] [1750863286.002997]: Created initial reachable set for visualization
+theta: 0.17729693446755923, LOS: 0.5284405108566281
+[INFO] [1750863287.324417]: Plotting 1 reachable sets
+[INFO] [1750863287.335754]: Reachable set 0: original=(0.920,0.537), flipped=(0.920,0.537), size=(0.600,0.600)
+[INFO] [1750863287.355441]: ? Plotted reachable set 0
+[INFO] [1750863287.374213]: Successfully plotted 1 reachable sets
+[INFO] [1750863290.386420]: Plotting 1 reachable sets
+[INFO] [1750863290.413017]: Reachable set 0: original=(0.920,0.537), flipped=(0.920,0.537), size=(0.600,0.600)
+[INFO] [1750863290.438425]: ? Plotted reachable set 0
+[INFO] [1750863290.467843]: Successfully plotted 1 reachable sets
+[INFO] [1750863292.551368]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s while maintaining a small left turn to continue trajectory correction. Final step: Reduce velocity to 0.2 m/s and a minimal angular velocity to smoothly approach the goal, prioritizing forward movement as LOS and orientation are converging.
+[INFO] [1750863292.571744]: Calling safety controller with current state: pos=(0.920,0.537), action: [0.3 0.2]
+[INFO] [1750863293.294859]: Received 4 reachable sets from safety controller at pos=(0.920,0.537)
+[INFO] [1750863293.313329]: ? New safe plan generated with 3 steps
+theta: 0.17791501428921852, LOS: 0.5283634566529106
+[INFO] [1750863293.894182]: Plotting 4 reachable sets
+[INFO] [1750863293.906626]: Reachable set 0: original=(0.920,0.537), flipped=(0.775,0.517), size=(0.000,0.000)
+[WARN] [1750863293.918842]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863293.932278]: Reachable set 1: original=(0.916,0.538), flipped=(0.721,0.499), size=(0.475,0.474)
+[INFO] [1750863293.960339]: ? Plotted reachable set 1
+[INFO] [1750863293.971248]: Reachable set 2: original=(0.909,0.540), flipped=(0.677,0.481), size=(0.961,0.951)
+[INFO] [1750863293.989580]: ? Plotted reachable set 2
+[INFO] [1750863294.009706]: Reachable set 3: original=(0.909,0.541), flipped=(0.677,0.480), size=(1.448,1.432)
+[INFO] [1750863294.027709]: ? Plotted reachable set 3
+[INFO] [1750863294.039695]: Successfully plotted 3 reachable sets
+[INFO] [1750863296.629062]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s while maintaining a small left turn to continue trajectory correction. Final step: Reduce velocity to 0.2 m/s and a minimal angular velocity to smoothly approach the goal, prioritizing accuracy over speed.
+[INFO] [1750863296.681592]: Calling safety controller with current state: pos=(0.668,0.456), action: [0.3 0.2]
+[INFO] [1750863297.315721]: Plotting 4 reachable sets
+[INFO] [1750863297.347870]: Reachable set 0: original=(0.920,0.537), flipped=(0.417,0.375), size=(0.000,0.000)
+[WARN] [1750863297.370691]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863297.393387]: Reachable set 1: original=(0.916,0.538), flipped=(0.421,0.374), size=(0.475,0.474)
+[INFO] [1750863297.409536]: Received 4 reachable sets from safety controller at pos=(0.668,0.456)
+[INFO] [1750863297.421212]: LLM Plan execution complete.
+[INFO] [1750863297.433867]: ? Plotted reachable set 1
+[INFO] [1750863297.453102]: ? New safe plan generated with 3 steps
+[INFO] [1750863297.471833]: Reachable set 2: original=(0.909,0.540), flipped=(0.427,0.372), size=(0.961,0.951)
+theta: 0.45866617893105555, LOS: 0.5989946139552637
+[INFO] [1750863297.517722]: ? Plotted reachable set 2
+[INFO] [1750863297.531963]: Reachable set 3: original=(0.909,0.541), flipped=(0.427,0.371), size=(1.448,1.432)
+[INFO] [1750863297.556243]: ? Plotted reachable set 3
+[INFO] [1750863297.567396]: Successfully plotted 3 reachable sets
+[INFO] [1750863300.434015]: Plotting 4 reachable sets
+[INFO] [1750863300.448687]: Reachable set 0: original=(0.920,0.537), flipped=(0.417,0.375), size=(0.000,0.000)
+[WARN] [1750863300.472088]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863300.497569]: Reachable set 1: original=(0.916,0.538), flipped=(0.421,0.374), size=(0.475,0.474)
+[INFO] [1750863300.525079]: ? Plotted reachable set 1
+[INFO] [1750863300.538263]: Reachable set 2: original=(0.910,0.540), flipped=(0.427,0.372), size=(0.961,0.951)
+[INFO] [1750863300.566252]: ? Plotted reachable set 2
+[INFO] [1750863300.591146]: Reachable set 3: original=(0.910,0.541), flipped=(0.427,0.371), size=(1.448,1.432)
+[INFO] [1750863300.618335]: ? Plotted reachable set 3
+[INFO] [1750863300.636818]: Successfully plotted 3 reachable sets
+[INFO] [1750863300.934500]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s while maintaining a small left turn to continue trajectory correction. Final step: Maximize forward velocity to 0.5 m/s, reducing angular velocity to 0.0 rad/s to directly approach the goal.
+[INFO] [1750863300.961895]: Calling safety controller with current state: pos=(0.668,0.456), action: [0.3 0.2]
+[INFO] [1750863301.888199]: Received 4 reachable sets from safety controller at pos=(0.668,0.456)
+[INFO] [1750863301.937217]: ? New safe plan generated with 3 steps
+theta: 0.45895382543008045, LOS: 0.5989587715459491
+[INFO] [1750863304.359489]: Plotting 4 reachable sets
+[INFO] [1750863304.386092]: Reachable set 0: original=(0.668,0.456), flipped=(0.229,0.138), size=(0.000,0.000)
+[WARN] [1750863304.404400]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863304.412875]: Reachable set 1: original=(0.664,0.459), flipped=(0.233,0.135), size=(0.475,0.474)
+[INFO] [1750863304.431714]: ? Plotted reachable set 1
+[INFO] [1750863304.447253]: Reachable set 2: original=(0.658,0.463), flipped=(0.239,0.132), size=(0.960,0.951)
+[INFO] [1750863304.463718]: ? Plotted reachable set 2
+[INFO] [1750863304.474579]: Reachable set 3: original=(0.658,0.465), flipped=(0.239,0.129), size=(1.446,1.432)
+[INFO] [1750863304.502840]: ? Plotted reachable set 3
+[INFO] [1750863304.527680]: Successfully plotted 3 reachable sets
+[INFO] [1750863305.417022]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s and reduce angular velocity to 0.1 rad/s to maintain balance. Final step: Maximize forward velocity to 0.5 m/s and reduce angular velocity to 0.0 rad/s to reach the goal quickly.
+[INFO] [1750863305.474522]: Calling safety controller with current state: pos=(0.448,0.297), action: [0.3 0.2]
+[INFO] [1750863306.003798]: LLM Plan execution complete.
+[INFO] [1750863306.555206]: Received 4 reachable sets from safety controller at pos=(0.448,0.297)
+[INFO] [1750863306.581062]: ? New safe plan generated with 3 steps
+theta: 0.7808739338937051, LOS: 0.5852307981954016
+[INFO] [1750863307.986842]: Plotting 4 reachable sets
+[INFO] [1750863308.008521]: Reachable set 0: original=(0.668,0.456), flipped=(-0.089,-0.292), size=(0.000,0.000)
+[WARN] [1750863308.022697]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863308.040109]: Reachable set 1: original=(0.658,0.460), flipped=(-0.079,-0.296), size=(0.475,0.474)
+[INFO] [1750863308.080693]: ? Plotted reachable set 1
+[INFO] [1750863308.100165]: Reachable set 2: original=(0.652,0.463), flipped=(-0.073,-0.299), size=(0.960,0.951)
+[INFO] [1750863308.119446]: ? Plotted reachable set 2
+[INFO] [1750863308.139411]: Reachable set 3: original=(0.652,0.466), flipped=(-0.073,-0.302), size=(1.446,1.432)
+[INFO] [1750863308.172074]: ? Plotted reachable set 3
+[INFO] [1750863308.197564]: Successfully plotted 3 reachable sets
+[INFO] [1750863310.135086]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s while maintaining a small left turn. Final step: Maximize forward velocity to 0.5 m/s, reducing angular velocity to 0.0 rad/s to directly approach the goal.
+[INFO] [1750863310.175601]: Calling safety controller with current state: pos=(0.290,0.082), action: [0.3 0.2]
+[INFO] [1750863310.655401]: LLM Plan execution complete.
+[INFO] [1750863311.179848]: Plotting 4 reachable sets
+[INFO] [1750863311.209053]: Reachable set 0: original=(0.668,0.456), flipped=(-0.089,-0.292), size=(0.000,0.000)
+[INFO] [1750863311.218985]: Received 4 reachable sets from safety controller at pos=(0.290,0.082)
+[WARN] [1750863311.227369]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863311.251988]: Reachable set 1: original=(0.658,0.460), flipped=(-0.079,-0.296), size=(0.475,0.474)
+[INFO] [1750863311.269083]: ? New safe plan generated with 3 steps
+[INFO] [1750863311.290076]: ? Plotted reachable set 1
+[INFO] [1750863311.460635]: Reachable set 2: original=(0.652,0.463), flipped=(-0.080,-0.300), size=(0.960,0.951)
+theta: 1.0887070604130014, LOS: 0.27750455768856863
+[INFO] [1750863311.560434]: ? Plotted reachable set 2
+[INFO] [1750863311.575784]: Reachable set 3: original=(0.652,0.466), flipped=(-0.089,-0.319), size=(1.446,1.432)
+[INFO] [1750863311.604340]: ? Plotted reachable set 3
+[INFO] [1750863311.625031]: Successfully plotted 3 reachable sets
+[INFO] [1750863314.347716]: Plotting 4 reachable sets
+[INFO] [1750863314.368997]: Reachable set 0: original=(0.448,0.297), flipped=(-0.046,-0.652), size=(0.000,0.000)
+[WARN] [1750863314.384221]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863314.436103]: Reachable set 1: original=(0.439,0.303), flipped=(-0.037,-0.658), size=(0.474,0.473)
+[INFO] [1750863314.485126]: ? Plotted reachable set 1
+[INFO] [1750863314.503902]: Reachable set 2: original=(0.433,0.308), flipped=(-0.031,-0.663), size=(0.959,0.951)
+[INFO] [1750863314.584797]: ? Plotted reachable set 2
+[INFO] [1750863314.595699]: Reachable set 3: original=(0.433,0.313), flipped=(-0.031,-0.668), size=(1.445,1.431)
+[INFO] [1750863314.632338]: ? Plotted reachable set 3
+[INFO] [1750863314.657246]: Successfully plotted 3 reachable sets
+[INFO] [1750863315.067859]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s while maintaining a small left turn to continue trajectory correction. Final step: Reduce velocity to 0.2 m/s and a minimal angular velocity (0.05 rad/s) to smoothly approach the target, prioritizing accuracy over speed.
+[INFO] [1750863315.103403]: Calling safety controller with current state: pos=(0.201,-0.177), action: [0.3 0.2]
+[INFO] [1750863315.355074]: LLM Plan execution complete.
+[INFO] [1750863315.778392]: Received 4 reachable sets from safety controller at pos=(0.201,-0.177)
+[INFO] [1750863315.808736]: ? New safe plan generated with 3 steps
+theta: 1.414877217001904, LOS: -0.7229984321115657
+[INFO] [1750863318.294108]: Plotting 4 reachable sets
+[INFO] [1750863318.327307]: Reachable set 0: original=(0.286,0.081), flipped=(0.110,-0.976), size=(0.000,0.000)
+[WARN] [1750863318.343159]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863318.363418]: Reachable set 1: original=(0.276,0.089), flipped=(0.120,-0.983), size=(0.474,0.473)
+[INFO] [1750863318.385650]: ? Plotted reachable set 1
+[INFO] [1750863318.394532]: Reachable set 2: original=(0.271,0.096), flipped=(0.125,-0.990), size=(0.958,0.950)
+[INFO] [1750863318.434205]: ? Plotted reachable set 2
+[INFO] [1750863318.445465]: Reachable set 3: original=(0.271,0.103), flipped=(0.125,-0.997), size=(1.444,1.431)
+[INFO] [1750863318.466544]: ? Plotted reachable set 3
+[INFO] [1750863318.478002]: Successfully plotted 3 reachable sets
+[INFO] [1750863319.358646]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s while maintaining a small left turn to continue trajectory correction. Final step: Reduce velocity to 0.2 m/s and a minimal angular velocity to smoothly approach the goal, accounting for momentum and LOS alignment.
+[INFO] [1750863319.400401]: Calling safety controller with current state: pos=(0.198,-0.447), action: [0.3 0.2]
+[INFO] [1750863319.912885]: LLM Plan execution complete.
+[INFO] [1750863320.183392]: Received 4 reachable sets from safety controller at pos=(0.198,-0.447)
+[INFO] [1750863320.192148]: ? New safe plan generated with 3 steps
+theta: 1.7407584772037623, LOS: -1.1538529836038323
+[INFO] [1750863322.153067]: Plotting 4 reachable sets
+[INFO] [1750863322.171811]: Reachable set 0: original=(0.201,-0.177), flipped=(0.349,-1.223), size=(0.000,0.000)
+[WARN] [1750863322.188794]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863322.210371]: Reachable set 1: original=(0.198,-0.169), flipped=(0.352,-1.232), size=(0.474,0.473)
+[INFO] [1750863322.231489]: ? Plotted reachable set 1
+[INFO] [1750863322.241492]: Reachable set 2: original=(0.192,-0.160), flipped=(0.357,-1.241), size=(0.958,0.951)
+[INFO] [1750863322.267970]: ? Plotted reachable set 2
+[INFO] [1750863322.276125]: Reachable set 3: original=(0.193,-0.151), flipped=(0.357,-1.249), size=(1.443,1.432)
+[INFO] [1750863322.311826]: ? Plotted reachable set 3
+[INFO] [1750863322.325388]: Successfully plotted 3 reachable sets
+[INFO] [1750863323.658397]: LLM reasoning: Initial step: Move forward at 0.3 m/s with a slight left turn (0.2 rad/s) to correct for the current offset. Second step: Increase forward velocity to 0.4 m/s while maintaining a small left turn to continue trajectory correction. Final step: Reduce velocity to 0.2 m/s and a minimal angular velocity to smoothly approach the goal, prioritizing accuracy over speed.
+[INFO] [1750863323.694005]: Calling safety controller with current state: pos=(0.275,-0.700), action: [0.3 0.2]
+[INFO] [1750863324.256564]: LLM Plan execution complete.
+[INFO] [1750863324.635560]: Received 4 reachable sets from safety controller at pos=(0.275,-0.700)
+[INFO] [1750863324.668305]: ? New safe plan generated with 3 steps
+theta: 2.0553881089366515, LOS: -1.196905328867539
+[INFO] [1750863325.341482]: Plotting 4 reachable sets
+[INFO] [1750863325.376615]: Reachable set 0: original=(0.198,-0.447), flipped=(0.496,-1.214), size=(0.000,0.000)
+[WARN] [1750863325.412700]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863325.442946]: Reachable set 1: original=(0.189,-0.435), flipped=(0.516,-1.240), size=(0.474,0.474)
+[INFO] [1750863325.501629]: ? Plotted reachable set 1
+[INFO] [1750863325.544232]: Reachable set 2: original=(0.184,-0.425), flipped=(0.553,-1.293), size=(0.958,0.953)
+[INFO] [1750863325.659096]: ? Plotted reachable set 2
+[INFO] [1750863325.682374]: Reachable set 3: original=(0.185,-0.415), flipped=(0.606,-1.367), size=(1.443,1.436)
+[INFO] [1750863325.706520]: ? Plotted reachable set 3
+[INFO] [1750863325.726336]: Successfully plotted 3 reachable sets
+[INFO] [1750863328.267176]: LLM reasoning: Step 1: Initiate forward movement with a moderate linear velocity (0.3 m/s) and slight left turn (0.2 rad/s) to correct initial orientation. Step 2: Increase linear velocity to 0.4 m/s while maintaining a slight right turn (-0.1 rad/s) to continue towards the goal. Step 3: Reduce linear velocity to 0.2 m/s and stop angular velocity to ensure precise final approach and arrival at the target.
+[INFO] [1750863328.307062]: Calling safety controller with current state: pos=(0.427,-0.923), action: [0.3 0.2]
+[INFO] [1750863328.811938]: LLM Plan execution complete.
+[INFO] [1750863329.160079]: Plotting 4 reachable sets
+[INFO] [1750863329.205892]: Reachable set 0: original=(0.198,-0.447), flipped=(0.657,-1.398), size=(0.000,0.000)
+[WARN] [1750863329.220094]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1750863329.253175]: Reachable set 1: original=(0.189,-0.435), flipped=(0.666,-1.409), size=(0.474,0.474)
+[INFO] [1750863329.299586]: ? Plotted reachable set 1
+[INFO] [1750863329.345767]: Received 4 reachable sets from safety controller at pos=(0.427,-0.923)
+[INFO] [1750863329.361341]: Reachable set 2: original=(0.184,-0.425), flipped=(0.671,-1.420), size=(0.958,0.953)
+[INFO] [1750863329.376345]: ? New safe plan generated with 3 steps
+[INFO] [1750863329.394910]: ? Plotted reachable set 2
+theta: 2.3775719243781515, LOS: -1.1368894460574235
+[INFO] [1750863329.419432]: Reachable set 3: original=(0.185,-0.415), flipped=(0.670,-1.430), size=(1.443,1.436)
+[INFO] [1750863329.437190]: ? Plotted reachable set 3
+[INFO] [1750863329.445062]: Successfully plotted 3 reachable sets
+^C[safellmra_llm_controller-8] killing on exit
+[base_footprint_to_laser-7] killing on exit
+[rplidarNode-6] killing on exit
+[odom_ekf_node-4] killing on exit
+[base_footprint_to_imu-5] killing on exit
+[robot_pose_ekf-3] killing on exit
+[jetracer-2] killing on exit
+terminate called without an active exception
+[INFO] [1750863332.046621]: Visualization loop ended.
+[INFO] [1750863332.053967]: Controller shutdown.
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+(ros_venv) jetson@nano-4

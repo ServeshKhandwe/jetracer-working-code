@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+
+    <data name="AppSettingsTitle" type="System.String">
+        <value>إعدادات التطبيق</value>
+    </data>
+    <data name="CounterSettingsLinkText" type="System.String">
+        <value>تكوين إعدادات العداد</value>
+    </data>
+    <data name="CreateAppSettingsLinkText" type="System.String">
+        <value>إنشاء إعدادات التطبيق</value>
+    </data>
+    <data name="DebugAndTraceLinkText" type="System.String">
+        <value>تكوين تصحيح الأخطاء والتتبع</value>
+    </data>
+    <data name="DebugAndTraceTitle" type="System.String">
+        <value>تصحيح الأخطاء والتتبع</value>
+    </data>
+    <data name="DefineErrorPageLinkText" type="System.String">
+        <value>تعريف صفحة الأخطاء الافتراضية</value>
+    </data>
+    <data name="Instructions" type="System.String">
+        <value>استخدم هذه الصفحة لتكوين التطبيق الخاص بك باستخدام القيم التي لا تريد أن تقوم بترميزها ترميزًا ثابتًا في الصفحات ولتمكين التطبيق من إرسال البريد الإلكتروني وتكوين ميزة تصحيح الأخطاء وإعداد صفحة أخطاء افتراضية وإيقاف التطبيق أو بدء تشغيله.</value>
+    </data>
+    <data name="ManageAppSettingsLinkText" type="System.String">
+        <value>إدارة إعدادات التطبيق</value>
+    </data>
+    <data name="NumOfAppSettings" type="System.String">
+        <value>إعدادات التطبيق الموجودة: {0}</value>
+    </data>
+    <data name="PagesToCountLinkText" type="System.String">
+        <value>تكوين الصفحات للعدّ</value>
+    </data>
+    <data name="SiteReportsLinkText" type="System.String">
+        <value>تقارير عداد الموقع</value>
+    </data>
+    <data name="SiteStatisticsTitle" type="System.String">
+        <value>إحصائيات الموقع</value>
+    </data>
+    <data name="SMTPSettingsLinkText" type="System.String">
+        <value>تكوين إعدادات البريد الإلكتروني لبروتوكول SMTP</value>
+    </data>
+    <data name="SMTPSettingsTitle" type="System.String">
+        <value>إعدادات SMTP</value>
+    </data>
+    <data name="Title" type="System.String">
+        <value>خيارات تكوين التطبيق</value>
+    </data>
+    <data name="TitleForSite" type="System.String">
+        <value>خيارات تكوين التطبيق للموقع: {0}</value>
+    </data>
+    <data name="AppStatusTitle" type="System.String">
+        <value>حالة التطبيق</value>
+    </data>
+    <data name="ApplicationStateOnline" type="System.String">
+        <value>التطبيق: متصل</value>
+    </data>
+    <data name="ApplicationStateOffline" type="System.String">
+        <value>التطبيق: غير متصل</value>
+    </data>
+    <data name="TakeApplicationOffline" type="System.String">
+        <value>تغيير حالة التطبيق إلى غير متصل</value>
+    </data>
+    <data name="TakeApplicationOnline" type="System.String">
+        <value>تغيير حالة التطبيق إلى متصل</value>
+    </data>
+    <data name="WebConfigProtectionTitle" type="System.String">
+        <value>حماية ملف Web.Config</value>
+    </data>
+    <data name="WebConfigProtectionLinkText" type="System.String">
+        <value>حماية المقاطع في ملف Web.Config</value>
+    </data>
+    <data name="NumOfProtectedSettings" type="System.String">
+        <value>المقاطع المشفرة: {0}</value>
+    </data>
+</root>

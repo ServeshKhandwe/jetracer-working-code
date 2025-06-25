@@ -1,0 +1,8 @@
+prefix=/home/jetson/catkin_ws/install
+
+Name: system_identification
+Description: Description of system_identification
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy geometry_msgs nav_msgs std_msgs

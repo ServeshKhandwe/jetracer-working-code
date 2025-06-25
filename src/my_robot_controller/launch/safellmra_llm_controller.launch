@@ -1,0 +1,10 @@
+<launch>
+  <include file="$(find jetracer)/launch/jetracer.launch" />
+  <include file="$(find jetracer)/launch/lidar.launch" />
+
+    <node pkg="my_robot_controller" 
+          type="safellmra_llm_controller.py" 
+          name="safellmra_llm_controller" 
+          output="screen">
+    </node>
+</launch>

@@ -1,0 +1,29 @@
+<launch>
+  <!-- Launch the jetracer base -->
+  <include file="$(find jetracer)/launch/jetracer.launch" />
+  
+  <!-- Launch the simple path follower -->
+  <node pkg="my_robot_controller" 
+        type="simple_path_follower.py" 
+        name="simple_path_follower" 
+        output="screen"
+        required="true"
+        launch-prefix="python3">
+        
+    <!-- Path selection: 1=Vertical S, 2=Square Wave, 3=P-shape, 4=Horizontal S, 5=Smooth Trajectory -->
+    <param name="path_type" value="1" />
+    
+    <!-- Scale factor for path size (meters) -->
+    <param name="path_scale" value="1.0" />
+    
+    <!-- Control parameters -->
+    <param name="max_linear_vel" value="0.3" />
+    <param name="max_angular_vel" value="0.6" />
+    <param name="waypoint_tolerance" value="3.0" />
+    <param name="angle_tolerance" value="3.0" />
+  </node>
+  
+  <!-- Optional: Record bag file for analysis -->
+  <!-- <node pkg="rosbag" type="record" name="path_recorder" 
+        args="-o /tmp/path_following /cmd_vel /odom" /> -->
+</launch>

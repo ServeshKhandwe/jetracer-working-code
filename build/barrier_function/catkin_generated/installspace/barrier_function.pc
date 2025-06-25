@@ -1,0 +1,8 @@
+prefix=/home/jetson/catkin_ws/install
+
+Name: barrier_function
+Description: Description of barrier_function
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy geometry_msgs nav_msgs sensor_msgs std_msgs custom_msgs

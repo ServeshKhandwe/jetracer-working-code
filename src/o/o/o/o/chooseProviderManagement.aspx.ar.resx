@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  <data name="Instructions" type="System.String">
+    <value>استخدم هذه الصفحة لتكوين طريقة تخزين بيانات إدارة موقع الويب، مثل بيانات العضوية. يمكنك استخدام موفر واحد لكل بيانات الإدارة الخاصة بالموقع أو يمكنك تحديد موفر مختلف لكل ميزة.</value>
+  </data>
+  <data name="ConfigureProviders" type="System.String">
+    <value>تكوين موفرين</value>
+  </data>
+  <data name="CurrentProvider" type="System.String">
+    <value>التطبيق الذي تستخدمه مهيأ حاليًا لاستخدام الموفر: &lt;b&gt;{0}&lt;/b&gt;&lt;br&gt;&lt;br&gt;</value>
+  </data>                           
+  <data name="SelectDifferent" type="System.String">
+    <value>حدد موفر مختلف لكل ميزة (خيارات متقدمة)</value>
+  </data>                           
+  <data name="SelectSame" type="System.String">
+    <value>حدد موفر واحد لكافة بيانات إدارة الموقع</value>
+  </data>                           
+</root>

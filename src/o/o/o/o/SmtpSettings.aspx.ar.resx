@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+
+    <data name="AuthenticationInfoNote" type="System.String">
+        <value>&lt;b&gt;ملاحظة:&lt;/b&gt; لمزيد من المعلومات حول المصادقة من خلال خادم البريد الإلكتروني الخاص بك، الرجاء الاتصال بمسؤول شبكة الاتصال.</value>
+    </data>
+    <data name="AuthenticationLabel" type="System.String">
+        <value>المصادقة:</value>
+    </data>
+    <data name="BasicRadioButtonText" type="System.String">
+        <value>أساسي</value>
+    </data>
+    <data name="BasicAuthDesc" type="System.String">
+        <value>حدد هذا الخيار إذا كان خادم البريد الإلكتروني الخاص بك يطلب منك إدخال اسم المستخدم وكلمة المرور بشكل واضح عند إرسال رسالة بريد إلكتروني.</value>
+    </data>
+    <data name="ConfirmationText" type="System.String">
+        <value>تم حفظ إعدادات SMTP.</value>
+    </data>
+    <data name="FromLabel" type="System.String">
+        <value>من:</value>
+    </data>
+    <data name="Instructions" type="System.String">
+        <value>استخدم هذه الصفحة لإدارة إعدادات SMTP، التي تحدد طريقة إرسال تطبيق الويب الخاص بك للبريد الإلكتروني. إذا كان خادم البريد الإلكتروني يطلب منك تسجيل الدخول قبل إرسال رسالة البريد الإلكتروني، حدد نوع المصادقة التي يحتاجها الخادم واسم المستخدم وكلمة المرور المطلوب استخدامهما، عند الضرورة.</value>
+    </data>
+    <data name="NoneRadioButtonText" type="System.String">
+        <value>بلا</value>
+    </data>
+    <data name="NTLMAuthDesc" type="System.String">
+        <value>حدد هذا الخيار إذا كان خادم البريد الإلكتروني الخاص بك متصلاً بشبكة اتصال محلية وكنت قد قمت بتسجيل الدخول إليه باستخدام بيانات الاعتماد المحددة في Windows.</value>
+    </data>
+    <data name="NTLMRadioButtonText" type="System.String">
+        <value>NTLM (مصادقة Windows)</value>
+    </data>
+    <data name="SenderUserNameLabel" type="System.String">
+        <value>اسم&amp;nbsp;المستخدم&amp;nbsp;الخاص بالمرسل:</value>
+    </data>
+    <data name="SenderPasswordLabel" type="System.String">
+        <value>كلمة المرور&amp;nbsp;الخاصة بالمرسل:</value>
+    </data>
+    <data name="ServerNameLabel" type="System.String">
+        <value>اسم&amp;nbsp;الخادم:</value>
+    </data>
+    <data name="ServerPortLabel" type="System.String">
+        <value>منفذ&amp;nbsp;الخادم:</value>
+    </data>
+    <data name="Title" type="System.String">
+        <value>تكوين إعدادات SMTP</value>
+    </data>
+    <data name="TitleForSite" type="System.String">
+        <value>تركيب إعدادات SMTP للموقع: </value>
+    </data>
+    <data name="UnexpectedSmtpField" type="System.String">
+        <value>قيمة تكوين غير متوقعة للحقل smtpauthenticate</value>
+    </data>
+    <data name="NonNegativeServerPort" type="System.String">
+        <value>* يجب أن تكون قيمة منفذ الخادم عددًا صحيحًا موجبًا </value>
+    </data>
+</root>

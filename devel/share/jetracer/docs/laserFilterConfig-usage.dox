@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="jetracer" pkg="jetracer" type="jetracer">
+  <param name="laserAngle" type="int" value="180" />
+  <param name="distance" type="double" value="12.0" />
+</node>
+\endverbatim
+

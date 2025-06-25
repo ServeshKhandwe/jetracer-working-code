@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" type="System.String">
+    <value>نشط</value>
+  </data>
+  <data name="AddToRoles" type="System.String">
+    <value>إضافة مستخدم إلى الأدوار:</value>
+  </data>
+  <data name="AddToRoles2" type="System.String">
+    <value>إضافة &lt;b&gt;" {0} "&lt;/b&gt; إلى الأدوار:</value>
+  </data>
+  <data name="AreYouSure" type="System.String">
+    <value>هل تريد بالتأكيد حذف بيانات المستخدم "&lt;b&gt;{0}&lt;/b&gt;"؟&lt;br&gt;&lt;br&gt;سيتم حذف كافة البيانات الخاصة بهذا المستخدم، بما في ذلك اسم المستخدم وعضويته في الأدوار وأي قيمة من قيم خاصية ملف التعريف مرتبطة به.</value>
+  </data>
+  <data name="Back" type="System.String">
+    <value>السابق</value>
+  </data>
+  <data name="DeleteUser" type="System.String">
+    <value>حذف بيانات المستخدم</value>
+  </data>
+  <data name="EditRoles" type="System.String">
+    <value>تحرير الأدوار</value>
+  </data>
+  <data name="EditUser" type="System.String">
+    <value>تحرير بيانات المستخدم</value>
+  </data>
+  <data name="Email" type="System.String">
+    <value>عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="For" type="System.String">
+    <value>خاص بـ:</value>
+  </data>
+  <data name="Instructions" type="System.String">
+    <value>انقر فوق أحد الصفوف لتحديد مستخدم، ثم انقر فوق &lt;b&gt;تحرير بيانات المستخدم&lt;/b&gt; لعرض كلمة المرور الخاصة بالمستخدم أو تغييرها أو عرض أية خصائص أخرى أو تغييرها. لتعيين أدوار للمستخدم المحدد، حدد خانات الاختيار المناسبة من تلك الموجودة إلى اليسار.&lt;br&gt;&lt;br&gt;لمنع مستخدم من تسجيل الدخول إلى التطبيق مع الاحتفاظ ببيانات ذلك المستخدم في قاعدة البيانات، قم بتعيين حالة المستخدم على "غير نشط" من خلال إلغاء تحديد خانة الاختيار.</value>
+  </data>
+  <data name="ManageUsers" type="System.String">
+    <value>إدارة المستخدمين</value>
+  </data>
+  <data name="No" type="System.String">
+    <value>لا</value>
+  </data>
+  <data name="NoRolesDefined" type="System.String">
+    <value>لم يتم تعريف أية أدوار.</value>
+  </data>  
+  <data name="NoUsersCreated" type="System.String">
+    <value>لم يتم إنشاء بيانات أي مستخدمين.</value>
+  </data>
+  <data name="NotFoundUsers" type="System.String">
+    <value>لم يتم العثور على أي مستخدمين في عملية البحث هذه.</value>
+  </data>
+  <data name="SearchBy" type="System.String">
+    <value>بحث حسب:</value>
+  </data>
+  <data name="SearchFor" type="System.String">
+    <value>بحث عن مستخدم</value>
+  </data>
+  <data name="RolesNotEnabled" type="System.String">
+    <value>الأدوار غير ممكّنة.</value>
+  </data>
+  <data name="UserID" type="System.String">
+    <value>معرف المستخدم</value>
+  </data>
+  <data name="Username" type="System.String">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="Yes" type="System.String">
+    <value>نعم</value>
+  </data>
+  <data name="SearchForUsers" type="System.String">
+    <value>بحث عن مستخدمين</value>
+  </data>
+  <data name="CreateNewUser" type="System.String">
+    <value>إنشاء بيانات مستخدم جديد</value>
+  </data>
+  <data name="Roles" type="System.String">
+    <value>الأدوار</value>
+  </data>
+</root>

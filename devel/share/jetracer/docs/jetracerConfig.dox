@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~kp" : \b [int] p min: 0, default: 350, max: 2000
+- \b "~ki" : \b [int] i min: 0, default: 120, max: 2000
+- \b "~kd" : \b [int] d min: 0, default: 0, max: 2000
+- \b "~servo_bias" : \b [int] servo_bias min: -500, default: 0, max: 500
+

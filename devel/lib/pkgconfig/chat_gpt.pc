@@ -1,0 +1,8 @@
+prefix=/home/jetson/catkin_ws/devel
+
+Name: chat_gpt
+Description: Description of chat_gpt
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy custom_msgs std_msgs

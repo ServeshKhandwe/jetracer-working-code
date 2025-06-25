@@ -1,0 +1,35 @@
+
+WARNING: disk usage in log directory [/home/jetson/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.
+
+started roslaunch server http://nano-4gb-jp451:38431/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /jetracer/coefficient_a: -0.016073
+ * /jetracer/coefficient_b: 0.176183
+ * /jetracer/coefficient_c: -23.428084
+ * /jetracer/coefficient_d: 1500
+ * /jetracer/linear_correction: 1.0
+ * /jetracer/port_name: /dev/ttyACM0
+ * /jetracer/publish_odom_transform: False
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/debug: False
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom
+ * /robot_pose_ekf/self_diagnose: False
+ * /robot_pose_ekf/sensor_timeout: 0.5
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /rplidarNode/angle_compensate: True
+ * /rplidarNode/frame_id: laser_frame
+ * /rplidarNode/inverted: False
+ * /rplidarNode/serial_baudrate: 115200
+ * /rplidarNode/serial_port: /dev/ttyACM1
+ * /use_sim_time: False
+

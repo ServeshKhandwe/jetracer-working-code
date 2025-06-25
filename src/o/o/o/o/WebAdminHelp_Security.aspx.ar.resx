@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Title00" type="System.String">
+    <value>علامة التبويب "أمان" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="WebSiteAdministrationToolSecurityTab01" type="System.String">
+    <value>علامة التبويب "أمان" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="WebSiteAdministrationToolSecurityTab02" type="System.String">
+    <value>استخدم علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt; الموجودة في "أداة إدارة مواقع الويب" لإدارة القواعد الخاصة لتأمين موارد معينة في تطبيق الويب. يستخدم ASP.NET نظام أمان يتيح لك تقييد الوصول لحسابات مستخدمين معينة أو الأدوار التي تنتمي إليها حسابات المستخدمين. باستخدام علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt;، يمكنك استخدام حسابات المستخدمين والأدوار وقواعد الوصول الخاصة بموقع الويب. قبل استخدام علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt; للمرة الأولى، استخدم &lt;span class=UI&gt;معالج إعداد الأمان&lt;/span&gt; لتكوين إعدادات الأمان الأساسية الخاصة بموقع الويب.</value>
+  </data>
+  <data name="Introduction01" type="System.String">
+    <value>مقدمة</value>
+  </data>
+  <data name="Introduction02" type="System.String">
+    <value>يعتمد أمان ASP.NET على المفاهيم الخاصة بحسابات المستخدمين والأدوار وقواعد الوصول ويتيح لك تقييد الوصول إلى موارد تطبيق الويب لحسابات المستخدمين التي تحددها فقط. يتم إنشاء إعدادات الأمان باستخدام مجموعة من إعدادات التكوين والبيانات المخزنة في إحدى قواعد البيانات (أو أي مخزن آخر). يتم تخزين حسابات المستخدمين والأدوار التي يتم إنشاءها في قاعدة البيانات ويتم تخزين قواعد الوصول في ملف Web.config.</value>
+  </data>
+  <data name="Introduction03" type="System.String">
+    <value>يمكنك تكوين التطبيق الخاص بك من أجل استخدام أنواع الأمان التالية التي تعتمد على طريقة استخدام موقع الويب:</value>
+  </data>
+  <data name="Introduction04" type="System.String">
+    <value>المصادقة المعتمدة على النماذج (&lt;span class=UI&gt;من الإنترنت&lt;/span&gt;)</value>
+  </data>
+  <data name="Introduction05" type="System.String">
+    <value>يتم استخدام المصادقة المعتمدة على النماذج لمواقع الويب المتوفرة للإنترنت. تستخدم المصادقة المعتمدة على النماذج نظام عضوية ASP.NET لإدارة حسابات ومجموعات (أدوار) المستخدمين الفردية. يتم تخزين معلومات حساب المستخدم في قاعدة بيانات محلية أو في قاعدة بيانات Microsoft SQL Server. يمكنك استخدام عناصر تحكم تسجيل دخول ASP.NET لإنشاء صفحة تسجيل دخول حيث يمكن للمستخدمين إدخال بيانات الاعتماد الخاصة بهم. </value>
+  </data>
+  <data name="Introduction06" type="System.String">
+    <value>مصادقة Microsoft Windows متكاملة (&lt;span class=UI&gt;من شبكة محلية&lt;/span&gt;)</value>
+  </data>
+  <data name="Introduction07" type="System.String">
+    <value>تتفاعل مصادقة Windows مع أمان Windows، باستخدام بيانات اعتماد تسجيل الدخول التي يوفرها المستخدمون عندما يقومون بتسجيل الدخول إلى أنظمة تشغيل Windows. لذلك، تتم تهيئة مصادقة سيناريوهات إنترانت Windows حيث قام المستخدمون بتسجيل الدخول إلى شبكة معتمدة على أنظمة تشغيل Windows. لا حاجة إلى إنشاء صفحة تسجيل دخول، لأن المستخدمون قاموا بتسجيل الدخول تلقائيًا في التطبيق الخاص بك باستخدام بيانات اعتماد Windows الخاصة بهم.</value>
+  </data>
+  <data name="Introduction08" type="System.String">
+    <value>استخدم مقطع &lt;span class=UI&gt;المستخدمون&lt;/span&gt; الموجود في علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt; لإتمام المهام التالية:</value>
+  </data>
+  <data name="Introduction09" type="System.String">
+    <value>إنشاء حسابات المستخدمين الخاصة بموقع الويب المسجلة أو تحريرها أو حذفها.</value>
+  </data>
+  <data name="Introduction10" type="System.String">
+    <value>عرض قائمة بكافة حسابات المستخدمين الخاصة بموقع الويب المسجلة.</value>
+  </data>
+  <data name="Introduction11" type="System.String">
+    <value>تغيير أسلوب المصادقة المستخدَم بواسطة موقع الويب. </value>
+  </data>
+  <data name="Introduction12" type="System.String">
+    <value>ملاحظة   يمكنك إنشاء حسابات المستخدمين وإدارتها، إذا قمت بتحديد خيار &lt;span class=UI&gt;من الإنترنت&lt;/span&gt; لنوع المصادقة (إذا كنت تستخدم المصادقة المعتمدة على النماذج). في حالة تحديد الخيار &lt;span class=UI&gt;من الشبكة المحلية&lt;/span&gt; باعتبارها نوع المصادقة الخاص بك (في حالة استخدام مصادقة Windows المتكاملة)، لا يمكنك إدارة حسابات المستخدمين الفردية. في حالة تغيير نوع المصادقة، يتم فقد أي معلومات مستخدم تم إنشاؤها. بالإضافة إلى ذلك، قد لا تعمل قواعد الوصول بالشكل الذي تم تكوينها عليه. بشكل عام، يجب تحديد نوع مصادقة فقط عند تكوين موقع الويب لأول مرة.</value>
+  </data>
+  <data name="Introduction13" type="System.String">
+    <value>استخدم المقطع &lt;span class=UI&gt;الأدوار&lt;/span&gt; الموجود في علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt; لتجميع حسابات المستخدمين، مما يسهل عملية تعيين الأذونات (التخويل).</value>
+  </data>
+  <data name="Introduction14" type="System.String">
+    <value>استخدم المقطع &lt;span class=UI&gt;قواعد الوصول&lt;/span&gt; الموجود في علامة تبويب &lt;span class=UI&gt;الأمان&lt;/span&gt; للسماح بالوصول بالنسبة لصفحات معينة لحسابات مستخدمين معينة أو لكافة حسابات المستخدمين التي تنتمي لدور معين أو حظره. عادةً، يمكنك استخدام قاعدة الوصول لتقييد الصفحات بالنسبة لبعض حسابات المستخدمين. </value>
+  </data>
+  <data name="CreatingUsers01" type="System.String">
+    <value>إنشاء المستخدمين</value>
+  </data>
+  <data name="CreatingUsers02" type="System.String">
+    <value>يمكنك إنشاء حسابات المستخدمين أو إدارتها، في حالة إعداد نوع المصادقة على &lt;span class=UI&gt;من الإنترنت&lt;/span&gt; (مصادقة النماذج). لتغيير أنواع المصادقة، انقر فوق &lt;span class=UI&gt;تحديد مصادقة type&lt;/span&gt;.</value>
+  </data>
+  <data name="CreatingUsers03" type="System.String">
+    <value>إنشاء حسابات المستخدمين</value>
+  </data>
+  <data name="CreatingUsers04" type="System.String">
+    <value>انقر فوق &lt;span class=UI&gt;إنشاء بيانات مستخدم&lt;/span&gt;، ثم حدد المعلومات التالية.</value>
+  </data>
+  <data name="CreatingUsers05" type="System.String">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="CreatingUsers06" type="System.String">
+    <value>أدخل اسم حساب المستخدم المطلوب إنشاء بياناته.</value>
+  </data>
+  <data name="CreatingUsers07" type="System.String">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="CreatingUsers08" type="System.String">
+    <value>أدخل كلمة المرور الخاص بـ &lt;span class=UI&gt;اسم المستخدم&lt;/span&gt;. كلمات المرور متحسسة لحالة الأحرف.</value>
+  </data>
+  <data name="CreatingUsers09" type="System.String">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="CreatingUsers10" type="System.String">
+    <value>أعد إدخال &lt;span class=UI&gt;كلمة المرور&lt;/span&gt;. </value>
+  </data>
+  <data name="CreatingUsers11" type="System.String">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="CreatingUsers12" type="System.String">
+    <value>أدخل عنوان البريد الإلكتروني الخاص بـ &lt;span class=UI&gt;اسم المستخدم&lt;/span&gt;. </value>
+  </data>
+  <data name="CreatingUsers13" type="System.String">
+    <value>لا تؤكد "أداة إدارة مواقع الويب ما إذا كان العنوان الذي تم إدخاله هو عنوان بريد إلكتروني صالح، ولكنها تؤكد أن عنوان البريد الإلكتروني يتناسب مع التنسيق الصحيح لعناوين البريد الإلكتروني.</value>
+  </data>
+  <data name="CreatingUsers14" type="System.String">
+    <value>سؤال الأمان</value>
+  </data>
+  <data name="CreatingUsers15" type="System.String">
+    <value>أدخل سؤالاً يتم توجيهه للمستخدم عندما يحتاج لإعادة تعيين كلمة المرور أو استردادها.</value>
+  </data>
+  <data name="CreatingUsers16" type="System.String">
+    <value>إجابة الأمان</value>
+  </data>
+  <data name="CreatingUsers17" type="System.String">
+    <value>أدخل الإجابة على &lt;span class=UI&gt;سؤال الأمان&lt;/span&gt;.</value>
+  </data>
+  <data name="CreatingUsers18" type="System.String">
+    <value>مستخدم نشط</value>
+  </data>
+  <data name="CreatingUsers19" type="System.String">
+    <value>تحديد هذا الخيار لتمكين حساب المستخدم الحالي باعتباره مستخدمًا نشطًا (حاليًا) لهذا الموقع. في حالة عدم تحديد هذا الخيار، يتم تخزين معلومات المستخدم، لكن المستخدم لا يستطيع تسجيل الدخول إلى موقع الويب.</value>
+  </data>
+  <data name="CreatingUsers20" type="System.String">
+    <value>الأدوار</value>
+  </data>
+  <data name="CreatingUsers21" type="System.String">
+    <value>اختر الأدوار الخاص بـ &lt;span class=UI&gt;اسم المستخدم &lt;/span&gt;. يتم إنشاء الأدوار بشكل منفصل. لمزيد من المعلومات، راجع المقطع التالي. </value>
+  </data>
+  <data name="CreatingRoles01" type="System.String">
+    <value>إنشاء الأدوار</value>
+  </data>
+  <data name="CreatingRoles02" type="System.String">
+    <value>إنشاء الأدوار</value>
+  </data>
+  <data name="CreatingRoles03" type="System.String">
+    <value>في علامة التبويب &lt;span class=UI&gt;الأمان&lt;/span&gt; انقر فوق &lt;span class=UI&gt;تمكين الأدوار&lt;/span&gt;. </value>
+  </data>
+  <data name="CreatingRoles04" type="System.String">
+    <value>انقر فوق &lt;span class=UI&gt;إنشاء أو إدارة الأدوار&lt;/span&gt;.</value>
+  </data>
+  <data name="CreatingRoles05" type="System.String">
+    <value>في المربع &lt;span class=UI&gt;اسم الدور الجديد&lt;/span&gt;، أدخل اسمًا للدور المطلوب إنشائه، مثل المسؤول أو العضو أو الضيف، ثم انقر فوق &lt;span class=UI&gt;إضافة دور&lt;/span&gt;.</value>
+  </data>
+  <data name="CreatingRoles06" type="System.String">
+    <value>إضافة حسابات مستخدمين للأدوار</value>
+  </data>
+  <data name="CreatingRoles07" type="System.String">
+    <value>في علامة التبويب &lt;span class=UI&gt;الأمان&lt;/span&gt; انقر فوق &lt;span class=UI&gt;إدارة المستخدمين&lt;/span&gt;, ثم انقر فوق&lt;span class=UI&gt; تحرير المستخدم&lt;/span&gt;. </value>
+  </data>
+  <data name="CreatingRoles08" type="System.String">
+    <value>تحت &lt;span class=UI&gt;الأدوار&lt;/span&gt;، تحديد أدوار حساب المستخدم.</value>
+  </data>
+  <data name="CreatingAccessRules01" type="System.String">
+    <value>إنشاء أدوار الوصول</value>
+  </data>
+  <data name="CreatingAccessRules02" type="System.String">
+    <value>إنشاء أدوار الوصول</value>
+  </data>
+  <data name="CreatingAccessRules03" type="System.String">
+    <value>في علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt;، انقر فوق &lt;span class=UI&gt;إنشاء قواعد الوصول&lt;/span&gt;.</value>
+  </data>
+  <data name="CreatingAccessRules04" type="System.String">
+    <value>حدد الخيارات التالية:</value>
+  </data>
+  <data name="CreatingAccessRules05" type="System.String">
+    <value>حدد دليلاً لهذه القاعدة</value>
+  </data>
+  <data name="CreatingAccessRules06" type="System.String">
+    <value>يمكنك اختيار إنشاء قاعدة تسري على الموقع بالكامل أو على دليل فرعي معين. في عرض بنية الدليل الخاص بموقع الويب، حدد الدليل الذي تسري عليه القاعدة. </value>
+  </data>
+  <data name="CreatingAccessRules07" type="System.String">
+    <value>تحت &lt;span class=UI&gt;تسري القاعدة على&lt;/span&gt;، حدد طريقة سريان القاعدة.</value>
+  </data>
+  <data name="CreatingAccessRules08" type="System.String">
+    <value>الدور</value>
+  </data>
+  <data name="CreatingAccessRules09" type="System.String">
+    <value>حدد &lt;span class=UI&gt;الدور&lt;/span&gt;، ثم في القائمة، حدد اسم الدور الذي تسري عليه قاعدة الوصول.</value>
+  </data>
+  <data name="CreatingAccessRules10" type="System.String">
+    <value>مستخدم</value>
+  </data>
+  <data name="CreatingAccessRules11" type="System.String">
+    <value>حدد &lt;span class=UI&gt;المستخدم&lt;/span&gt;، ثم أدخل اسم حساب المستخدم الذي تسري عليه قاعدة الوصول. إذا كنت تستخدم عضوية ASP.NET (يتم تعيين أمان موقع الويب إلى &lt;span class=UI&gt;من الإنترنت&lt;/span&gt;)، ويمكنك أيضًا استخدام الميزة "بحث عن المستخدمين".</value>
+  </data>
+  <data name="CreatingAccessRules12" type="System.String">
+    <value>كافة المستخدمين</value>
+  </data>
+  <data name="CreatingAccessRules13" type="System.String">
+    <value>حدد هذا الخيار لكي تسري القاعدة على كافة زائري موقع الويب.</value>
+  </data>
+  <data name="CreatingAccessRules14" type="System.String">
+    <value>ملاحظة   توخ الحذر عند إنشاء قاعدة بالخيار &lt;span class=UI&gt;كافة المستخدمين&lt;/span&gt;. لأنك قد تقوم بدون قصد بإنشاء قاعدة تمنع كافة المستخدمين من الوصول إلى أحد المجلدات.</value>
+  </data>
+  <data name="CreatingAccessRules15" type="System.String">
+    <value>المستخدمون المجهولون</value>
+  </data>
+  <data name="CreatingAccessRules16" type="System.String">
+    <value>حدد هذا التطبيق بحيث تسري هذه القاعدة على حسابات المستخدمين المجهولين (غير المسجلين) فقط. </value>
+  </data>
+  <data name="CreatingAccessRules17" type="System.String">
+    <value>عادةً، يتم اختيار خيار &lt;span class=UI&gt;المستخدمون المجهولون&lt;/span&gt; لتقييد (رفض) وصول المستخدمين الذين لم يقوموا بتسجيل الدخول.</value>
+  </data>
+  <data name="CreatingAccessRules18" type="System.String">
+    <value>الإذن</value>
+  </data>
+  <data name="CreatingAccessRules19" type="System.String">
+    <value>حدد &lt;span class=UI&gt;سماح&lt;/span&gt; لمنح صلاحية الوصول لدليل معين خاص بدور أو حساب مستخدم محدد.</value>
+  </data>
+  <data name="CreatingAccessRules20" type="System.String">
+    <value>حدد &lt;span class=UI&gt;رفض&lt;/span&gt; لعدم السماح بالوصول إلى الدليل المحدد الخاص بدور أو حساب مستخدم معين.</value>
+  </data>
+  <data name="CreatingAccessRules21" type="System.String">
+    <value>على سبيل المثال، لمنع المستخدمين الذين لم يقوموا بتسجيل الدخول (المجهولين) من الاطلاع على الصفحات الموجودة في أحد المجلدات، انقر فوق المجلد، ثم حدد , select &lt;span class=UI&gt;المستخدمون المجهولون&lt;/span&gt;, ثم حدد &lt;span class=UI&gt;رفض&lt;/span&gt;. </value>
+  </data>
+  <data name="CreatingAccessRules22" type="System.String">
+    <value>أحيانًا قد تضطر إلى إنشاء قواعد متعددة لنفس المجلد من أجل تكوين الأذونات الصحيحة. على سبيل المثال، قد تقوم بإنشاء قاعدة لرفض وصول حسابات المستخدمين المجهولين وقاعدة ثانية لرفض وصول حسابات المستخدمين الموجود في الدور "ضيف". ويهذا يتم السماح للمستخدمين الذين قاموا بتسجيل الدخول والذين ينتمون لمجموعة أخرى فقط بالوصول.</value>
+  </data>
+  <data name="BehindtheScenes01" type="System.String">
+    <value>العمل في الخلفية</value>
+  </data>
+  <data name="BehindtheScenes02" type="System.String">
+    <value>تقوم "أداة إدارة مواقع الويب" بإدارة معلومات الأمان في الموقعين التاليين:</value>
+  </data>
+  <data name="BehindtheScenes03" type="System.String">
+    <value>ملف Web.config في جذر موقع الويب.</value>
+  </data>
+  <data name="BehindtheScenes04" type="System.String">
+    <value>قاعدة بيانات موفر الموقع المستخدمة في تخزين معلومات المستخدم والمجموعة.</value>
+  </data>
+  <data name="Web.configSettings01" type="System.String">
+    <value>إعدادات Web.config</value>
+  </data>
+  <data name="Web.configSettings02" type="System.String">
+    <value>إعدادات Web.config التي تتم إدارتها من خلال علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt; هي الأقسام &amp;lt;authorization&amp;gt; و&amp;lt;roleManager&amp;gt; و&amp;lt;authentication&amp;gt;.</value>
+  </data>
+  <data name="Web.configSettings03" type="System.String">
+    <value>مثال التعليمات البرمجية التالية هو ملف Web.config الذي تم إنشاؤه باستخدام "أداة إدارة مواقع الويب" في دليل فرعي مقيد خاص بموقع الويب. يتم السماح للمسؤولين بالوصول إلى الدليل الفرعي المقيد ولا يتم السماح بذلك للمستخدمين المجهولين.</value>
+  </data>
+  <data name="Database01" type="System.String">
+    <value>قاعدة البيانات</value>
+  </data>
+  <data name="Database02" type="System.String">
+    <value>عند استخدام موفر البيانات الافتراضي، تقوم "أداة إدارة مواقع الويب" بإنشاء إدخالات في قاعدة بيانات ASP.NET الافتراضية. تبعًا للإعدادات الافتراضية، تقوم "أداة إدارة مواقع الويب" بإنشاء قاعدة بيانات في المجلد App_Data الخاص بموقع الويب. لكن، باستخدام علامة التبويب &lt;span class=UI&gt;الموفر&lt;/span&gt;، يمكنك تحديد معلومات التطبيق الخاصة بالأدوار وحسابات المستخدمين التي يتم حفظها في قاعدة بيانات أخرى (على سبيل المثال، استرداد بيانات الدور من قاعدة بيانات مستخدمWindows). للحصول على معلومات تفصيلية، راجع علامة التبويب "الموفر" في "أداة إدارة مواقع الويب".</value>
+  </data>
+  <data name="MoreInformation01" type="System.String">
+    <value>مزيد من المعلومات</value>
+  </data>
+  <data name="MoreInformation02" type="System.String">
+    <value>للحصول على مزيد من المعلومات حول الإعدادات التي تتم إدارتها في علامة التبويب &lt;span class=UI&gt;أمان&lt;/span&gt;، في وثائق .NET Framework، راجع الموضوعات التالية:</value>
+  </data>
+  <data name="MoreInformation03" type="System.String">
+    <value>إدارة المستخدمين باستخدام عضوية ASP.NET </value>
+  </data>
+  <data name="MoreInformation04" type="System.String">
+    <value>تقييد الوصول إلى مواقع ويب ASP.NET</value>
+  </data>
+  <data name="MoreInformation05" type="System.String">
+    <value>نظرة عامة على ASP.NET</value>
+  </data>
+  <data name="SeeAlso01" type="System.String">
+    <value>راجع أيضًا</value>
+  </data>
+  <data name="SeeAlso02" type="System.String">
+    <value>نظرة عامة على "أداة إدارة مواقع الويب"</value>
+  </data>
+  <data name="SeeAlso03" type="System.String">
+    <value>علامة التبويب "تطبيق" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso04" type="System.String">
+    <value>علامة التبويب "موفر" في أداة إدارة مواقع الويب</value>
+  </data>
+  <data name="SeeAlso05" type="System.String">
+    <value>الأجزاء الداخلية "لأداة إدارة مواقع الويب"</value>
+  </data>
+</root>

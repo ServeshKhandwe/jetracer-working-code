@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="AddNewAccessRule" type="System.String">
+    <value>إضافة قاعدة وصول جديدة</value>
+  </data>
+  <data name="AreYouSure" type="System.String">
+    <value>هل تريد بالتأكيد حذف القاعدة:</value>
+  </data>
+  <data name="Delete" type="System.String">
+    <value>حذف</value>
+  </data>
+  <data name="Done" type="System.String">
+    <value>تم</value>
+  </data>
+  <data name="Instructions" type="System.String">
+    <value>استخدم هذه الصفحة في إدارة قواعد الوصول الخاصة بموقع الويب. ويتم تطبيق القواعد بالترتيب. بحيث يتم تطبيق أول قاعدة مطابِقة، كما أن الإذن المحدد في كل قاعدة يتجاوز الأذونات الموجودة في القواعد التي تليها. استخدم الزريّن &lt;b&gt;تحريك لأعلى&lt;/b&gt; و&lt;b&gt;تحريك لأسفل&lt;/b&gt; لتغيير ترتيب القاعدة المحددة.&lt;br&gt;&lt;br&gt;الرجاء ملاحظة أن القواعد الخافتة هي قواعد موروثة من الأصل ولا يمكن تغييرها على هذا المستوى.</value>
+  </data>
+  <data name="ManageAccessRules" type="System.String">
+    <value>إدارة قواعد الوصول</value>
+  </data>
+  <data name="MoveDown" type="System.String">
+    <value>تحريك لأسفل</value>
+  </data>
+  <data name="MoveUp" type="System.String">
+    <value>تحريك لأعلى</value>
+  </data>
+  <data name="No" type="System.String">
+    <value>لا</value>
+  </data>  
+  <data name="Permission" type="System.String">
+    <value>الإذن</value>
+  </data> 
+  <data name="RuleManagement" type="System.String">
+    <value> إدارة القواعد</value>
+  </data>      
+  <data name="Select" type="System.String">
+    <value>تحديد</value>
+  </data>
+  <data name="UsersAndRoles" type="System.String">
+    <value>المستخدمون والأدوار</value>
+  </data>
+  <data name="Yes" type="System.String">
+    <value>نعم</value>
+  </data>
+  <data name="BracketAll" type="System.String">
+    <value>[الكل]</value>
+  </data>
+  <data name="BracketAnonymous" type="System.String">
+    <value>[مجهول]</value>
+  </data>
+  <data name="Allow" type="System.String">
+    <value>سماح</value>
+  </data>
+  <data name="Deny" type="System.String">
+    <value>رفض</value>
+  </data>
+</root>
