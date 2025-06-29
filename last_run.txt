@@ -1,0 +1,135 @@
+The bot moves right only when I run this script
+
+rocess[jetracer-2]: started with pid [26675]
+process[robot_pose_ekf-3]: started with pid [26680]
+process[odom_ekf_node-4]: started with pid [26686]
+process[base_footprint_to_imu-5]: started with pid [26709]
+process[rplidarNode-6]: started with pid [26729]
+process[base_footprint_to_laser-7]: started with pid [26736]
+process[safellmra_llm_controller-8]: started with pid [26753]
+SetParams
+[ INFO] [1751193839.544385847]: set robot param: p=350 i=120 d=0 linear_correction=1 servo_bias=0
+[ INFO] [1751193839.760158506]: set steering coefficient: a=-0.016073 b=0.176183 c=-23.4281 d=1500
+[ INFO] [1751193839.767824026]: output frame: odom
+[ INFO] [1751193839.795486896]: RPLIDAR running on ROS package rplidar_ros, SDK Version:2.0.0
+[ INFO] [1751193839.803904379]: base frame: base_footprint
+[ INFO] [1751193839.909796010]: RPLIDAR MODE:A1M8
+[ INFO] [1751193839.909947413]: RPLIDAR S/N: 8592ED93C0EA98C7A0E69BF5154C4560
+[ INFO] [1751193839.910024234]: Firmware Ver: 1.29
+[ INFO] [1751193839.910087046]: Hardware Rev: 7
+[ INFO] [1751193839.961451305]: RPLidar health status : OK.
+[ INFO] [1751193839.965216019]: start receive message
+[ INFO] [1751193840.161679232]: Initializing Imu sensor
+[ INFO] [1751193840.162314635]: Initializing Odom sensor
+[ INFO] [1751193840.181617573]: Imu sensor activated
+[ INFO] [1751193840.182106469]: Odom sensor activated
+[ INFO] [1751193840.200162141]: Kalman filter initialized with odom measurement
+[ INFO] [1751193840.257127275]: current scan mode: Sensitivity, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz,
+[INFO] [1751193842.179397]: Publishing combined odometry on /odom_ekf
+[INFO] [1751193852.422350]: ============================================================
+[INFO] [1751193852.442947]: SafeLLMRA LLM Controller Starting on Jetracer
+[INFO] [1751193852.461862]: ============================================================
+[INFO] [1751193852.480560]: Initializing SafeLLMRA components...
+[INFO] [1751193852.490224]: Loading configuration from: /home/jetson/catkin_ws/src/my_robot_controller/my_robot_controller/config.yaml
+[INFO] [1751193852.688202]: Configuration loaded successfully
+[INFO] [1751193852.698688]: LiDAR scaling factor set to: 1.0
+[INFO] [1751193852.712469]: Position scaling factor set to: 0.001
+[INFO] [1751193852.721549]: Step duration set to: 3.0 seconds
+[INFO] [1751193852.733111]: Plan frequency set to: 1.0 seconds
+[INFO] [1751193852.744431]: Loading dynamics model...
+[INFO] [1751193852.760277]: Dataset path: /home/jetson/catkin_ws/src/my_robot_controller/data/collected_offline_data.npz
+[INFO] [1751193852.770507]: Loading dataset...
+[INFO] [1751193853.673697]: ? Dataset loaded successfully from /home/jetson/catkin_ws/src/my_robot_controller/data/collected_offline_data.npz
+[INFO] [1751193853.682631]: Physical state dimension: 8
+[INFO] [1751193853.726143]: Training data shapes - X: (20000, 8), U: (20000, 2), X_next: (20000, 8)
+[INFO] [1751193853.736152]: Learning dynamics model from data...
+[INFO] [1751193853.747074]: Learning linear model with 20000 data points
+[INFO] [1751193853.770144]: State dim: 8, Action dim: 2
+[INFO] [1751193854.929149]: Learned A matrix shape: (8, 8)
+[INFO] [1751193854.942413]: Learned B matrix shape: (8, 2)
+[INFO] [1751193854.961329]: Residuals shape: (20000, 8)
+[INFO] [1751193855.056930]: MatrixZonotope center shape: (8, 10)
+[INFO] [1751193855.075306]: MatrixZonotope generators shape: (8, 30)
+[INFO] [1751193855.095368]: Residual statistics - mean: 0.0542, max: 0.4065
+[INFO] [1751193855.118246]: ? Learned MatrixZonotope model successfully
+[INFO] [1751193855.217716]: Initializing Safety Controller...
+[INFO] [1751193855.226477]: Initializing Goal Manager...
+[INFO] [1751193855.238372]: Initializing LLM Agent...
+[INFO] [1751193855.245960]: Initializing LLM Agent...
+[INFO] [1751193855.258306]: LLM Configuration:
+[INFO] [1751193855.273910]:   - Model: llama3:8b
+[INFO] [1751193855.294160]:   - Base URL: http://192.168.137.116:8000/v1
+[INFO] [1751193855.307142]:   - Max retries: 3
+[INFO] [1751193855.331764]: ✓ OpenAI API key configured
+[INFO] [1751193855.347929]: Action constraints:
+[INFO] [1751193855.378528]:   - Linear velocity: [0.0, 0.5] m/s
+[INFO] [1751193855.394580]:   - Angular velocity: [-0.5, 0.5] rad/s
+[INFO] [1751193855.419546]: ✓ LLM Agent initialized successfully
+[INFO] [1751193855.435011]: ? All SafeLLMRA components initialized successfully
+[INFO] [1751193855.511319]: Setting up visualization system...
+[INFO] [1751193856.443668]: Creating visualization window...
+[INFO] [1751193872.619802]: Waiting for visualization window to be ready...
+[INFO] [1751193874.565778]: ? Visualization window is ready and visible
+[INFO] [1751193874.591038]: Starting system components...
+[INFO] [1751193874.629908]: Starting motion capture client...
+[INFO] [1751193874.632611]: ? Motion capture client started
+[INFO] [1751193874.692797]: Motion capture server IP: 192.168.137.116
+[INFO] [1751193874.720855]: Connecting to motion capture system at ws://192.168.137.116:8765
+[INFO] [1751193875.182781]: Connected to motion capture system
+[INFO] [1751193875.255527]: ? Control timers started
+[INFO] [1751193875.288736]: ? Visualization timer started
+[INFO] [1751193875.338927]: ============================================================
+[INFO] [1751193875.362974]: Created initial reachable set for visualization
+[INFO] [1751193875.412928]: ? ALL SYSTEM COMPONENTS STARTED SUCCESSFULLY
+theta: 1.7342178631777454, LOS: -1.1773904865368177
+[INFO] [1751193875.460781]: SafeLLMRA LLM Controller is now ready for operation
+[INFO] [1751193875.513408]: ============================================================
+[INFO] [1751193875.551495]: SafeLLMRA LLM Controller Node started with visualization ready.
+[INFO] [1751193875.591986]: Visualization enabled. Starting main loop with plt.pause().
+[INFO] [1751193878.251204]: Plotting 1 reachable sets
+[INFO] [1751193878.324059]: Reachable set 0: original=(-0.328,0.790), flipped=(-0.328,0.790), size=(0.600,0.600)
+[INFO] [1751193878.418286]: ? Plotted reachable set 0
+[INFO] [1751193878.520532]: Successfully plotted 1 reachable sets
+[INFO] [1751193880.058122]: Full LLM Raw output: {   "plan": [     {"linear_velocity": 0.5, "angular_velocity": -0.4},     {"linear_velocity": 0.45, "angular_velocity": -0.2},     {"linear_velocity": 0.1, "angular_velocity": 0.3}   ],   "reasoning": "The robot starts by moving forward and turning left to align with the goal. In the second step, it continues to move towards the goal while making a slight adjustment to its orientation. Finally, when close enough, it prioritizes forward movement to reach the goal." }
+[INFO] [1751193880.173137]: LLM reasoning: The robot starts by moving forward and turning left to align with the goal. In the second step, it continues to move towards the goal while making a slight adjustment to its orientation. Finally, when close enough, it prioritizes forward movement to reach the goal.
+[INFO] [1751193880.340764]: Calling safety controller with current state: pos=(-0.328,0.790), action: [ 0.5 -0.4]
+[INFO] [1751193881.895005]: Received 4 reachable sets from safety controller at pos=(-0.328,0.790)
+[INFO] [1751193881.922658]: ? New safe plan generated with 3 steps
+theta: 1.7351283363298997, LOS: -1.1773334990641926
+[INFO] [1751193885.290723]: Full LLM Raw output: {   "plan": [     {"linear_velocity": 0.5, "angular_velocity": -0.4},     {"linear_velocity": 0.45, "angular_velocity": -0.2},     {"linear_velocity": 0.1, "angular_velocity": 0.1}   ],   "reasoning": "The robot starts by moving forward and turning left to align with the goal. In the second step, it continues to move towards the goal while making a slight adjustment to its orientation. Finally, when close enough, it prioritizes forward movement to reach the goal." }
+[INFO] [1751193885.330897]: LLM reasoning: The robot starts by moving forward and turning left to align with the goal. In the second step, it continues to move towards the goal while making a slight adjustment to its orientation. Finally, when close enough, it prioritizes forward movement to reach the goal.
+[INFO] [1751193885.378850]: Calling safety controller with current state: pos=(-0.628,0.470), action: [ 0.5 -0.4]
+[INFO] [1751193885.509766]: Plotting 4 reachable sets
+[INFO] [1751193885.544352]: Reachable set 0: original=(-0.328,0.790), flipped=(-0.928,0.150), size=(0.000,0.000)
+[WARN] [1751193885.572823]: Reachable set 0 too small: 0.0x0.0
+[INFO] [1751193885.595548]: Reachable set 1: original=(-0.334,0.801), flipped=(-0.922,0.139), size=(0.476,0.475)
+[INFO] [1751193885.680094]: ? Plotted reachable set 1
+[INFO] [1751193885.740960]: Reachable set 2: original=(-0.343,0.812), flipped=(-0.912,0.128), size=(0.962,0.954)
+[INFO] [1751193885.839685]: ? Plotted reachable set 2
+[INFO] [1751193885.892110]: Reachable set 3: original=(-0.343,0.822), flipped=(-0.913,0.118), size=(1.449,1.437)
+[INFO] [1751193885.941196]: LLM Plan execution complete.
+[INFO] [1751193885.966085]: ? Plotted reachable set 3
+[INFO] [1751193886.014394]: Successfully plotted 3 reachable sets
+[INFO] [1751193886.736639]: Received 4 reachable sets from safety controller at pos=(-0.628,0.470)
+[INFO] [1751193886.763825]: ? New safe plan generated with 3 steps
+theta: 0.8958031374543711, LOS: -0.6425479343638731
+^C[safellmra_llm_controller-8] killing on exit
+[base_footprint_to_laser-7] killing on exit
+[rplidarNode-6] killing on exit
+[base_footprint_to_imu-5] killing on exit
+[odom_ekf_node-4] killing on exit
+[robot_pose_ekf-3] killing on exit
+[jetracer-2] killing on exit
+terminate called without an active exception
+[INFO] [1751193890.329504]: Full LLM Raw output: {   "plan": [     {"linear_velocity": 0.5, "angular_velocity": -0.4},     {"linear_velocity": 0.45, "angular_velocity": -0.2},     {"linear_velocity": 0.1, "angular_velocity": 0.3}   ],   "reasoning": "The robot starts by moving forward and turning left to align with the goal. In step 2, it slows down slightly while continuing to turn left to adjust its orientation. Finally, in step 3, it prioritizes forward movement to reach the goal." }
+[INFO] [1751193890.350847]: LLM reasoning: The robot starts by moving forward and turning left to align with the goal. In step 2, it slows down slightly while continuing to turn left to adjust its orientation. Finally, in step 3, it prioritizes forward movement to reach the goal.
+[INFO] [1751193890.374433]: Calling safety controller with current state: pos=(-1.074,0.492), action: [ 0.5 -0.4]
+[INFO] [1751193890.821752]: Received 4 reachable sets from safety controller at pos=(-1.074,0.492)
+[INFO] [1751193890.859944]: ? New safe plan generated with 3 steps
+[INFO] [1751193891.010443]: Visualization loop ended.
+[INFO] [1751193891.023930]: Controller shutdown.
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done

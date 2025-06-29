@@ -160,12 +160,10 @@ class LLMAgent:
             # Calculate goal position
             goal_x = x_pos + goal_dx
             goal_y = y_pos + goal_dy
-            
-            LOS = math.atan2(
-                                    y_pos,
-                                    x_pos,
-                                )
-            
+
+            # Correct LOS calculation: angle from robot to goal
+            LOS = math.atan2(goal_y - y_pos, goal_x - x_pos)
+
             data = {
                 "robot_position": {"x": float(x_pos), "y": float(y_pos)},
                 "robot_orientation": {"theta": float(theta)},
@@ -201,6 +199,9 @@ class LLMAgent:
         
         print(f"theta: {theta}, LOS: {LOS}")
         
+        # Reduce the maximum linear velocity (throttle) for safer, slower movement
+        linear_bounds = [self.linear_vel_bounds[0], min(self.linear_vel_bounds[1], 0.15)]
+        
         prompt = f"""You are the motion controller of a 2D differential drive robot operating in a SafeLLMRA framework. 
 Generate control inputs (linear and angular velocities) to move the robot to the target position.
 
@@ -209,12 +210,23 @@ Current robot state:
 - Orientation: theta={theta:.3f} radians
 - Goal position: x={goal_pos['x']:.3f} mm, y={goal_pos['y']:.3f} mm
 - Distance to goal: {goal_distance:.3f} mm
-- Line of Sightl: {LOS:.3f} radians
+- Line of Sight: {LOS:.3f} radians
+
+For example, 
+the goal position is always at the origin (0, 0) in the robot's local frame, and the robot's current position is given in millimeters.
+for example if the robot is at (0.561, 0.307) and since the goal is at (0, 0), the robot should move towards the origin. For that it needs to compute the angle to the goal and adjust its orientation accordingly. It should ideal move forward and turn left towards the origin.
+just for an example:
+if the robot is at (-0.853,0.338) then you need to move forward and turn right towards the origin.
+if the robot is at (-0.903, -0.329) then you need to move forward and turn left towards the origin.
+if the robot is at (0.650, 0.3385) then you need to move forward and turn right towards the origin.
+
+Remeber that angular velocity is positive for left turns and negative for right turns.
 
 The robot is controlled by:
 - Linear velocity in [{linear_bounds[0]}, {linear_bounds[1]}] m/s
-- Angular velocity in [{angular_bounds[0]}, {angular_bounds[1]}] rad/s (negative = right turn, positive = left turn)
+- Angular velocity in [{angular_bounds[0]}, {angular_bounds[1]}] rad/s (if angular value is negative = robot will do right turn, and if the angular velocity is positive = The robot will do left turn)
 
+# IMPORTANT: To align the robot with the goal, compute the angular error as (LOS - theta). If this value is positive, turn left (positive angular velocity). If negative, turn right (negative angular velocity).
 
 Generate a 3-step plan to reach the goal efficiently while avoiding obstacles.
 Each step will be executed for approximately 1.0 seconds.
@@ -260,6 +272,7 @@ Output format (JSON only, no additional text):
                 content = response.choices[0].message.content.strip()
                 # Clean up any potential problematic characters
                 content = content.replace('\n', ' ').replace('\r', '')
+                rospy.loginfo(f"Full LLM Raw output: {content}")
                 rospy.logdebug(f"✓ LLM query successful on attempt {attempt + 1}")
                 return content
                 
