@@ -91,10 +91,10 @@ run_evaluation: true
 ## LLM settings
 llm:
   api_key: "sk-local-wXkpeMOqLbw_veD_dDf2uiGEFvtLazKsO1Kv2f4E3lE"
-  model: "llama3:8b"                      # or "gpt-3.5-turbo"
-  base_url: "http://192.168.137.135:8000/v1"
+  model: "qwen2.5-7b-instruct"                      # or "gpt-3.5-turbo"
+  base_url: "http://192.168.137.116:1234/v1"
   max_retries: 3
-  server_ip: "192.168.137.135"          # Motion capture server IP
+  server_ip: "192.168.137.116"          # Motion capture server IP
 
 planning:
   plan_horizon: 3                      # Number of steps in LLM plan

@@ -1,0 +1,35 @@
+# OpenAI Mocap Controller Configuration
+
+# OpenAI API Configuration
+openai:
+  api_key: ""  # Set via environment variable OPENAI_API_KEY
+  models_to_test:
+    - "gpt-4"
+    - "gpt-3.5-turbo"
+    - "gpt-4-turbo"
+  test_duration_per_model: 60  # seconds
+
+# Motion Capture Configuration
+mocap:
+  server_ip: "192.168.64.147"
+  server_port: 8765
+  position_scale_factor: 0.001  # Convert mm to meters
+
+# Control Configuration
+control:
+  frequency: 10.0  # Hz - control loop frequency
+  decision_frequency: 2.0  # Hz - how often to query OpenAI
+  max_linear_velocity: 0.3  # m/s
+  max_angular_velocity: 0.8  # rad/s
+
+# Goal Configuration
+goal:
+  x: 0.0  # meters
+  y: 0.0  # meters
+  tolerance: 0.1  # meters
+
+# Performance Logging
+performance:
+  log_enabled: true
+  log_file: "/tmp/openai_mocap_performance.json"
+  publish_reports: true

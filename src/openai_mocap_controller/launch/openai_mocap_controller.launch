@@ -1,0 +1,29 @@
+<launch>
+  <!-- Include jetracer base launch files -->
+  <include file="$(find jetracer)/launch/jetracer.launch" />
+  <include file="$(find jetracer)/launch/lidar.launch" />
+
+  <!-- OpenAI Mocap Controller Node -->
+  <node pkg="openai_mocap_controller" 
+        type="openai_mocap_controller.py" 
+        name="openai_mocap_controller" 
+        output="screen">
+    
+    <!-- Configuration parameters -->
+    <param name="openai_api_key" value="$(env OPENAI_API_KEY)" />
+    <param name="mocap_server_ip" value="192.168.64.147" />
+    <param name="mocap_server_port" value="8765" />
+    <param name="control_frequency" value="10.0" />
+    <param name="decision_frequency" value="2.0" />
+    <param name="goal_x" value="0.0" />
+    <param name="goal_y" value="0.0" />
+    <param name="position_scale_factor" value="0.001" />
+    <param name="max_linear_velocity" value="0.3" />
+    <param name="max_angular_velocity" value="0.8" />
+    
+    <!-- Model comparison parameters -->
+    <param name="models_to_test" value="gpt-4,gpt-3.5-turbo,gpt-4-turbo" />
+    <param name="test_duration" value="60" />
+    <param name="log_performance" value="true" />
+  </node>
+</launch>

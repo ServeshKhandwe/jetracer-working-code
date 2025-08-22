@@ -1,0 +1,215 @@
+
+SUMMARY
+========
+
+PARAMETERS
+ * /jetracer/coefficient_a: -0.016073
+ * /jetracer/coefficient_b: 0.176183
+ * /jetracer/coefficient_c: -23.428084
+ * /jetracer/coefficient_d: 1500
+ * /jetracer/linear_correction: 1.0
+ * /jetracer/port_name: /dev/ttyACM0
+ * /jetracer/publish_odom_transform: False
+ * /openai_mocap_controller/control_frequency: 10.0
+ * /openai_mocap_controller/decision_frequency: 2.0
+ * /openai_mocap_controller/goal_x: 0.0
+ * /openai_mocap_controller/goal_y: 0.0
+ * /openai_mocap_controller/log_performance: True
+ * /openai_mocap_controller/max_angular_velocity: 0.8
+ * /openai_mocap_controller/max_linear_velocity: 0.3
+ * /openai_mocap_controller/mocap_server_ip: 192.168.137.126
+ * /openai_mocap_controller/mocap_server_port: 8765
+ * /openai_mocap_controller/models_to_test: gpt-4,gpt-3.5-tur...
+ * /openai_mocap_controller/openai_api_key: sk-proj-bkCWRBzFk...
+ * /openai_mocap_controller/position_scale_factor: 0.001
+ * /openai_mocap_controller/test_duration: 60
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/debug: False
+ * /robot_pose_ekf/freq: 30.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom
+ * /robot_pose_ekf/self_diagnose: False
+ * /robot_pose_ekf/sensor_timeout: 0.5
+ * /robot_pose_ekf/vo_used: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /rplidarNode/angle_compensate: True
+ * /rplidarNode/frame_id: laser_frame
+ * /rplidarNode/inverted: False
+ * /rplidarNode/serial_baudrate: 115200
+ * /rplidarNode/serial_port: /dev/ttyACM1
+ * /use_sim_time: False
+
+NODES
+  /
+    base_footprint_to_imu (tf/static_transform_publisher)
+    base_footprint_to_laser (tf/static_transform_publisher)
+    jetracer (jetracer/jetracer)
+    odom_ekf_node (jetracer/odom_ekf.py)
+    openai_mocap_controller (openai_mocap_controller/openai_mocap_controller.py)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    rplidarNode (rplidar_ros/rplidarNode)
+
+auto-starting new master
+process[master]: started with pid [16630]
+ROS_MASTER_URI=http://nano-4gb-jp451:11311
+
+setting /run_id to 496f948a-7ec6-11f0-a670-28d0ea888533
+process[rosout-1]: started with pid [16672]
+started core service [/rosout]
+process[jetracer-2]: started with pid [16690]
+process[robot_pose_ekf-3]: started with pid [16691]
+process[odom_ekf_node-4]: started with pid [16701]
+process[base_footprint_to_imu-5]: started with pid [16718]
+process[rplidarNode-6]: started with pid [16737]
+SetParams
+[ INFO] [1755805058.320028509]: set robot param: p=350 i=120 d=0 linear_correction=1 servo_bias=0
+process[base_footprint_to_laser-7]: started with pid [16748]
+process[openai_mocap_controller-8]: started with pid [16765]
+[ INFO] [1755805058.554303243]: set steering coefficient: a=-0.016073 b=0.176183 c=-23.4281 d=1500
+[ INFO] [1755805058.776053930]: start receive message
+[ INFO] [1755805059.069515714]: RPLIDAR running on ROS package rplidar_ros, SDK Version:2.0.0
+[ INFO] [1755805059.160736445]: RPLIDAR MODE:A1M8
+[ INFO] [1755805059.161099113]: RPLIDAR S/N: 8592ED93C0EA98C7A0E69BF5154C4560
+[ INFO] [1755805059.161910024]: Firmware Ver: 1.29
+[ INFO] [1755805059.162549732]: Hardware Rev: 7
+[ INFO] [1755805059.173878480]: output frame: odom
+[ INFO] [1755805059.201960785]: base frame: base_footprint
+[ INFO] [1755805059.214427329]: RPLidar health status : OK.
+[ INFO] [1755805059.467592043]: Initializing Odom sensor
+[ INFO] [1755805059.487689040]: Odom sensor activated
+[ INFO] [1755805059.507943386]: Kalman filter initialized with odom measurement
+[ INFO] [1755805059.537107548]: current scan mode: Sensitivity, sample rate: 8 Khz, max_distance: 12.0 m, scan frequency:10.0 Hz,
+[ INFO] [1755805059.567908013]: Initializing Imu sensor
+[ INFO] [1755805059.607882469]: Imu sensor activated
+[INFO] [1755805062.224337]: Publishing combined odometry on /odom_ekf
+[INFO] [1755805067.475828]: ============================================================
+[INFO] [1755805067.484080]: OpenAI Mocap Controller Starting
+[INFO] [1755805067.493886]: ============================================================
+[INFO] [1755805067.598631]: Models to test: ['gpt-4', 'gpt-3.5-turbo', 'gpt-4-turbo']
+[INFO] [1755805067.621301]: Test duration per model: 60 seconds
+[INFO] [1755805067.985737]: OpenAI client initialized with model: gpt-4
+[INFO] [1755805068.082297]: Motion capture client started
+[INFO] [1755805068.086697]: Connecting to motion capture system at ws://192.168.137.126:8765
+[INFO] [1755805068.127346]: OpenAI Mocap Controller initialized successfully
+[INFO] [1755805068.167474]: OpenAI Mocap Controller running...
+[WARN] [1755805068.230616]: Waiting for mocap data...
+[INFO] [1755805068.452647]: Connected to motion capture system
+[INFO] [1755805068.527348]: Starting test with model: gpt-4
+[INFO] [1755805077.185614]: OpenAI Decision (gpt-4): linear=0.30, angular=0.70
+[INFO] [1755805077.197360]: Reasoning: The robot is not close to the goal yet, so it can move at maximum speed. There are no obstacles nearby, so no need to change direction. The angle to the goal is small, so the robot needs to turn slightly while moving forward.
+[INFO] [1755805080.260867]: OpenAI Decision (gpt-4): linear=0.30, angular=0.60
+[INFO] [1755805080.310607]: Reasoning: The robot is not very close to the goal and there are no close obstacles. Therefore, it can move at maximum linear velocity towards the goal. The angular velocity is set to the angle to the goal to correct the robot's heading.
+[INFO] [1755805083.726216]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.44
+[INFO] [1755805083.745807]: Reasoning: The robot is not very close to the goal, so it can move at maximum speed. The angle to the goal is negative, so the robot needs to turn to the right, which is achieved by a negative angular velocity. No close obstacles detected, so no need to adjust course for obstacle avoidance.
+[INFO] [1755805087.801413]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805087.834418]: Reasoning: The robot is not very close to the goal, so it can move at maximum speed. The angle to the goal is negative, so the robot needs to turn to the right at maximum angular speed. There are no obstacles nearby, so no need to slow down or change direction to avoid them.
+[INFO] [1755805094.765696]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805094.790920]: Reasoning: The robot is not very close to the goal, so it can move at maximum speed. The angle to the goal is negative, so the robot needs to turn to the right, which requires a negative angular velocity. There are no close obstacles, so no need to slow down or change direction to avoid anything.
+[INFO] [1755805110.125463]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805110.135495]: Reasoning: The robot is not close to any obstacles and is not very close to the goal. Therefore, it can move at maximum speed. The angle to the goal is negative, so the robot needs to turn counterclockwise, which requires a negative angular velocity.
+[INFO] [1755805114.221879]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805114.234742]: Reasoning: The robot is not close to any obstacles and is not very close to the goal. Therefore, it can move at maximum speed. However, the goal is to the robot's left, so it needs to turn left at maximum speed.
+[INFO] [1755805117.739121]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805117.749387]: Reasoning: The robot is not close to the goal yet, so it should move at maximum speed. The angle to the goal is negative, so the robot should turn counterclockwise at maximum speed. There are no obstacles close by, so no need to adjust speed for obstacle avoidance.
+[INFO] [1755805120.498837]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805120.512869]: Reasoning: The robot is not very close to the goal, so it can move at maximum speed. The angle to the goal is negative, so the robot needs to turn to the right, which requires a negative angular velocity. There are no obstacles close by, so no need to slow down or change direction to avoid them.
+[INFO] [1755805123.673871]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805123.683558]: Reasoning: The robot is not very close to the goal, so it can move at maximum speed. The angle to the goal is negative, so the robot needs to turn counterclockwise at maximum speed to face the goal. There are no close obstacles, so no need to avoid anything.
+[INFO] [1755805127.693345]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805127.708235]: Reasoning: The robot is not close to the goal yet, so it should move at maximum speed. The angle to the goal is negative, so the robot should turn counterclockwise at maximum speed. There are no close obstacles, so no need to slow down or change direction to avoid them.
+[WARN] [1755805128.521084]: Motion capture connection lost, attempting to reconnect...
+[INFO] [1755805128.665210]: Connected to motion capture system
+[INFO] [1755805130.502976]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805130.522523]: Reasoning: The robot is not close to the goal yet and there are no obstacles detected. Therefore, the robot should move at maximum speed towards the goal. The negative angular velocity is to correct the robot's heading towards the goal.
+[INFO] [1755805130.543944]: Switching to model: gpt-3.5-turbo
+[INFO] [1755805132.137314]: OpenAI Decision (gpt-3.5-turbo): linear=0.20, angular=-0.40
+[INFO] [1755805132.150051]: Reasoning: Moving towards the goal at reduced speed to approach it cautiously while adjusting heading angle.
+[INFO] [1755805139.098728]: OpenAI Decision (gpt-3.5-turbo): linear=0.20, angular=-0.40
+[INFO] [1755805139.110621]: Reasoning: Moving towards the goal at a safe speed while maintaining a trajectory that aligns with the goal. No obstacles detected, so continuing with current velocities.
+[INFO] [1755805141.087978]: OpenAI Decision (gpt-3.5-turbo): linear=0.20, angular=-0.40
+[INFO] [1755805141.099007]: Reasoning: Moving towards the goal at a safe speed while avoiding obstacles. The robot is not very close to the goal yet, so maintaining current velocities.
+[INFO] [1755805155.318251]: OpenAI Decision (gpt-3.5-turbo): linear=0.20, angular=-0.40
+[INFO] [1755805155.336924]: Reasoning: Moving towards the goal at a safe speed while maintaining a good heading alignment. No obstacles detected, so continuing on the current path.
+[INFO] [1755805169.923516]: OpenAI Decision (gpt-3.5-turbo): linear=0.20, angular=-0.40
+[INFO] [1755805169.935352]: Reasoning: Moving towards the goal at a safe speed while maintaining a good heading alignment with the goal. No obstacles detected, so continuing on the current path.
+[INFO] [1755805172.006546]: OpenAI Decision (gpt-3.5-turbo): linear=0.20, angular=-0.40
+[INFO] [1755805172.023026]: Reasoning: Moving towards the goal at a safe speed while avoiding obstacles. No close obstacles detected, so maintaining current velocities.
+[WARN] [1755805188.740817]: Motion capture connection lost, attempting to reconnect...
+[INFO] [1755805189.804276]: Connected to motion capture system
+[INFO] [1755805198.802670]: OpenAI Decision (gpt-3.5-turbo): linear=0.20, angular=-0.40
+[INFO] [1755805198.833218]: Reasoning: Moving towards the goal at a safe speed while avoiding obstacles. The robot is not very close to the goal yet, so maintaining current velocities.
+[INFO] [1755805198.852292]: Switching to model: gpt-4-turbo
+[INFO] [1755805232.524898]: OpenAI Decision (gpt-4-turbo): linear=0.20, angular=-0.60
+[INFO] [1755805232.536946]: Reasoning: The robot is relatively close to the goal but needs to adjust its heading significantly to align with the goal. The angular velocity is increased to -0.6 rad/s to quickly correct the heading towards the goal, while maintaining the current linear velocity of 0.2 m/s for steady progress. No close obstacles are detected, allowing for safe adjustment of the heading.
+[INFO] [1755805236.651779]: OpenAI Decision (gpt-4-turbo): linear=0.20, angular=-0.60
+[INFO] [1755805236.676572]: Reasoning: The robot is already moving towards the goal with a linear velocity of 0.20 m/s, which is safe and below the maximum limit. The angular velocity of -0.60 rad/s is being maintained to correct the heading towards the goal, as the robot needs to adjust its heading by -62.3 degrees to face the goal directly. No close obstacles are detected, so maintaining current velocities is appropriate to continue progress towards the goal.
+[INFO] [1755805243.986680]: OpenAI Decision (gpt-4-turbo): linear=0.20, angular=-0.60
+[INFO] [1755805243.997216]: Reasoning: The robot is already moving towards the goal with a linear velocity of 0.20 m/s, which is safe and below the maximum limit. The angular velocity of -0.60 rad/s is being maintained to correct the heading towards the goal, as the robot needs to adjust its heading by -62.3 degrees to face the goal directly. No close obstacles are detected, so maintaining the current velocities is appropriate to continue moving towards the goal efficiently.
+[INFO] [1755805247.677947]: OpenAI Decision (gpt-4-turbo): linear=0.20, angular=-0.62
+[INFO] [1755805247.687583]: Reasoning: The robot is relatively close to the goal with a distance of 0.44 meters. The angle to the goal is -62.3 degrees relative to the robot's heading, requiring a significant angular adjustment. Given there are no close obstacles, it is safe to increase the angular velocity to -0.62 rad/s to align more quickly with the goal, while maintaining the current linear velocity of 0.2 m/s to continue progressing towards the goal.
+[WARN] [1755805249.876743]: Motion capture connection lost, attempting to reconnect...
+[INFO] [1755805249.899960]: Connected to motion capture system
+[INFO] [1755805250.414389]: OpenAI Decision (gpt-4-turbo): linear=0.20, angular=-0.62
+[INFO] [1755805250.430912]: Reasoning: The robot is already moving towards the goal with a linear velocity of 0.20 m/s, which is safe and below the maximum limit. The angular velocity of -0.62 rad/s is being maintained to correct the heading towards the goal, as the robot needs to adjust its heading by -62.3 degrees to face the goal directly. No close obstacles are detected, so no adjustments for obstacle avoidance are necessary at this time.
+[INFO] [1755805253.719029]: OpenAI Decision (gpt-4-turbo): linear=0.20, angular=0.80
+[INFO] [1755805253.732131]: Reasoning: The robot needs to adjust its heading towards the goal. The angle to the goal is -160.3 degrees relative to its current heading, indicating a need for a significant clockwise rotation. The maximum angular velocity of 0.8 rad/s is used to achieve this rotation quickly. Since there are no close obstacles, a moderate linear velocity of 0.2 m/s is maintained to continue progressing towards the goal while rotating.
+[INFO] [1755805256.051922]: OpenAI Decision (gpt-4-turbo): linear=0.25, angular=-0.05
+[INFO] [1755805256.067393]: Reasoning: The robot is relatively close to the goal with a small angle difference to the goal direction. Given no close obstacles, a moderate linear velocity is set to close the distance, with a slight angular adjustment to align more precisely with the goal.
+[INFO] [1755805260.553233]: OpenAI Decision (gpt-4-turbo): linear=0.25, angular=0.70
+[INFO] [1755805260.570713]: Reasoning: The robot needs to adjust its heading towards the goal. The angle to the goal relative to the robot's heading is -175.1 degrees, indicating a need to turn left. Given no close obstacles, a higher angular velocity of 0.7 rad/s is chosen to quickly align with the goal, while maintaining the current linear velocity of 0.25 m/s to continue progressing towards the goal.
+[INFO] [1755805260.588741]: All models tested. Publishing final performance report.
+[INFO] [1755805260.612599]: Performance Report:
+[INFO] [1755805260.622511]: {
+  "model_comparison": {
+    "gpt-4": {
+      "average_distance_to_goal": 0.7723285187317978,
+      "minimum_distance_to_goal": 0.714130639897736,
+      "final_distance_to_goal": 0.806533422698548,
+      "total_distance_traveled": 2.0569129941805175,
+      "efficiency_ratio": 2.6632617393930658,
+      "data_points": 12
+    },
+    "gpt-3.5-turbo": {
+      "average_distance_to_goal": 0.8010556281930554,
+      "minimum_distance_to_goal": 0.4419032504172267,
+      "final_distance_to_goal": 0.4419032504172267,
+      "total_distance_traveled": 1.1873372873874095,
+      "efficiency_ratio": 1.4822157732861714,
+      "data_points": 7
+    },
+    "gpt-4-turbo": {
+      "average_distance_to_goal": 0.5319284150987167,
+      "minimum_distance_to_goal": 0.39184000597834046,
+      "final_distance_to_goal": 0.8510038846843019,
+      "total_distance_traveled": 1.361176052361916,
+      "efficiency_ratio": 2.5589459290481886,
+      "data_points": 8
+    }
+  }
+}
+[INFO] [1755805264.279102]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805264.290474]: Reasoning: The robot is not very close to the goal, so it can move at maximum speed. The robot needs to turn to the right to face the goal, hence the negative angular velocity. There are no obstacles close by, so no need to slow down or change direction to avoid them.
+[INFO] [1755805267.921158]: OpenAI Decision (gpt-4): linear=0.30, angular=0.80
+[INFO] [1755805267.938816]: Reasoning: The robot is not very close to the goal, so it can move at maximum speed. There are no close obstacles, so no need to avoid anything. The robot needs to turn towards the goal, so it should rotate at maximum speed.
+[INFO] [1755805270.313724]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805270.348625]: Reasoning: The robot is not close to the goal yet and there are no obstacles detected. Therefore, the robot should move at maximum speed towards the goal. The negative angular velocity is to correct the robot's heading towards the goal.
+[INFO] [1755805273.629019]: OpenAI Decision (gpt-4): linear=0.30, angular=0.80
+[INFO] [1755805273.645502]: Reasoning: The robot is not close to the goal and there are no obstacles detected by LiDAR. Therefore, the robot can move at maximum speed towards the goal. The angular velocity is set to maximum to correct the robot's heading towards the goal.
+[INFO] [1755805276.581370]: OpenAI Decision (gpt-4): linear=0.30, angular=-0.80
+[INFO] [1755805276.621692]: Reasoning: The robot is not close to any obstacles and is not very close to the goal. Therefore, it can move at maximum speed. The robot needs to turn to the right to face the goal, hence the negative angular velocity.
+[INFO] [1755805279.521553]: OpenAI Decision (gpt-4): linear=0.30, angular=0.80
+[INFO] [1755805279.532705]: Reasoning: The robot is not close to the goal and there are no obstacles detected. Therefore, the robot can move at maximum speed towards the goal. The angular velocity is set to maximum to correct the robot's heading towards the goal.
+^C[INFO] [1755805282.598970]: OpenAI Decision (gpt-4): linear=0.30, angular=0.80
+[INFO] [1755805282.606454]: Reasoning: The robot is not close to the goal yet and there are no obstacles in the front. Therefore, the robot should move forward at maximum speed and adjust its heading towards the goal.
+[openai_mocap_controller-8] killing on exit
+[base_footprint_to_laser-7] killing on exit
+[rplidarNode-6] killing on exit
+[base_footprint_to_imu-5] killing on exit
+[odom_ekf_node-4] killing on exit
+[robot_pose_ekf-3] killing on exit
+[jetracer-2] killing on exit
+terminate called without an active exception
+[rosout-1] killing on exit
+[master] killing on exit

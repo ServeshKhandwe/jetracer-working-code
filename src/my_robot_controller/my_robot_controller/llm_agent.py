@@ -160,10 +160,9 @@ class LLMAgent:
             # Calculate goal position
             goal_x = x_pos + goal_dx
             goal_y = y_pos + goal_dy
-
-            # Correct LOS calculation: angle from robot to goal
+            
             LOS = math.atan2(goal_y - y_pos, goal_x - x_pos)
-
+            
             data = {
                 "robot_position": {"x": float(x_pos), "y": float(y_pos)},
                 "robot_orientation": {"theta": float(theta)},
@@ -199,9 +198,6 @@ class LLMAgent:
         
         print(f"theta: {theta}, LOS: {LOS}")
         
-        # Reduce the maximum linear velocity (throttle) for safer, slower movement
-        linear_bounds = [self.linear_vel_bounds[0], min(self.linear_vel_bounds[1], 0.15)]
-        
         prompt = f"""You are the motion controller of a 2D differential drive robot operating in a SafeLLMRA framework. 
 Generate control inputs (linear and angular velocities) to move the robot to the target position.
 
@@ -220,13 +216,13 @@ if the robot is at (-0.853,0.338) then you need to move forward and turn right t
 if the robot is at (-0.903, -0.329) then you need to move forward and turn left towards the origin.
 if the robot is at (0.650, 0.3385) then you need to move forward and turn right towards the origin.
 
-Remeber that angular velocity is positive for left turns and negative for right turns.
+Remeber that angular velocity is negative for left turns and positive for right turns.
 
 The robot is controlled by:
 - Linear velocity in [{linear_bounds[0]}, {linear_bounds[1]}] m/s
-- Angular velocity in [{angular_bounds[0]}, {angular_bounds[1]}] rad/s (if angular value is negative = robot will do right turn, and if the angular velocity is positive = The robot will do left turn)
+- Angular velocity in [{angular_bounds[0]}, {angular_bounds[1]}] rad/s (if angular value is positive = robot will do right turn, and if the angular velocity is negative = The robot will do left turn)
 
-# IMPORTANT: To align the robot with the goal, compute the angular error as (LOS - theta). If this value is positive, turn left (positive angular velocity). If negative, turn right (negative angular velocity).
+# IMPORTANT: To align the robot with the goal, compute the angular error as (LOS - theta). If this value is negative, turn left (negative angular velocity). If positive, turn right (positive angular velocity).
 
 Generate a 3-step plan to reach the goal efficiently while avoiding obstacles.
 Each step will be executed for approximately 1.0 seconds.
@@ -248,9 +244,10 @@ Output format (JSON only, no additional text):
   ],
   "reasoning": "Brief explanation of the plan",
 }}"""
-
+        rospy.logdebug(f"LLM prompt created:\n{prompt[:500]}...")
         return prompt
 
+      
     def _query_llm(self, prompt: str) -> str:
         """Query the LLM API."""
         for attempt in range(self.max_retries):

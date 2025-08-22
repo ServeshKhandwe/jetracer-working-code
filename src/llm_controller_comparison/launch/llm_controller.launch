@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Load common parameters -->
+    <arg name="mocap_ip" default="192.168.64.147" />
+    
+    <!-- Start the jetracer base nodes -->
+    <include file="$(find jetracer_ros)/launch/jetracer.launch" />
+    
+    <!-- Start the LLM controller node -->
+    <node name="llm_controller" pkg="llm_controller_comparison" type="llm_controller_node.py" output="screen">
+        <param name="mocap_ip" value="$(arg mocap_ip)" />
+    </node>
+    
+    <!-- Add nodes for visualization if needed -->
+    
+</launch>

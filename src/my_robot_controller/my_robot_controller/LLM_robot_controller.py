@@ -102,7 +102,7 @@ class RobotControllerNode:
 
         # rospy.loginfo("JetRacer LLM Controller initialized")
 
-    async def connect_to_mocap(self, server_ip="192.168.64.147"):
+    async def connect_to_mocap(self, server_ip="192.168.137.16"):
         uri = f"ws://{server_ip}:8765"
         # rospy.loginfo(f"Connecting to motion capture system at {uri}")
 
@@ -238,7 +238,7 @@ class RobotControllerNode:
         angles = angles[::downsample_factor]
         ranges = ranges[::downsample_factor]
 
-        # Filter angles between 135° and 225° (in radians: 3p/4 to 5p/4)
+        # Filter angles between 135ï¿½ and 225ï¿½ (in radians: 3p/4 to 5p/4)
         mask = (angles >= 3 * np.pi / 4) | (angles <= -3 * np.pi / 4)
 
         self.lidar_scan = ranges[mask]
@@ -569,7 +569,7 @@ class RobotControllerNode:
         #     "```\n\n"
         #     "## Planning Guidelines\n"
         #     "1. IMPORTANT: Balance angular adjustments with forward progress. Do not get stuck in repeated angle adjustments.\n"
-        #     "2. When the angle is approximately aligned (within ±0.3 radians), prioritize forward movement.\n"
+        #     "2. When the angle is approximately aligned (within Â±0.3 radians), prioritize forward movement.\n"
         #     "3. Use a combination of rotation and forward movement when possible.\n"
         #     "4. Each step will be executed for approximately 0.3 seconds.\n"
         #     "5. For distant goals, focus on maintaining a consistent direction rather than perfect alignment.\n"
@@ -593,7 +593,7 @@ class RobotControllerNode:
             "The robot is controlled by: "
             "- Linear velocity (LVel) in [0.1, 0.3] m/s. "
             "- Angular velocity (AVel) in [-0.3, 0.3] rad/s which positive value turn CCW."
-            # "Lidar has 18 beams (-90° to +90°), values in meters (3.5 means no obstacle). "
+            # "Lidar has 18 beams (-90Â° to +90Â°), values in meters (3.5 means no obstacle). "
             # f"Current Lidar readings: {self.lidar_scan}. "
             "Move the robot to the target position by minimizing R while maintaining the yaw angle along the line of sight (LOS)."
             # "Rmemeber the colation of obstacles an do not move the robot to the obstales which you already have seen."
