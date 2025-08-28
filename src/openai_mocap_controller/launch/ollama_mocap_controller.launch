@@ -1,0 +1,35 @@
+<launch>
+  <!-- Include jetracer base launch files -->
+  <include file="$(find jetracer)/launch/jetracer.launch" />
+  <include file="$(find jetracer)/launch/lidar.launch" />
+
+  <!-- Ollama Mocap Controller Node -->
+  <node pkg="openai_mocap_controller" 
+        type="ollama_mocap_controller.py" 
+        name="ollama_mocap_controller" 
+        output="screen">
+    
+    <!-- Ollama Server Configuration -->
+    <param name="ollama_server_ip" value="192.168.137.54" />
+    <param name="ollama_server_port" value="11434" />
+    <param name="ollama_model" value="llama3:latest" />
+    <param name="request_timeout" value="10.0" />
+    
+    <!-- Motion Capture Configuration -->
+    <param name="mocap_server_ip" value="192.168.137.54" />
+    <param name="mocap_server_port" value="8765" />
+    
+    <!-- Control Configuration -->
+    <param name="control_frequency" value="10.0" />
+    <param name="decision_frequency" value="1.0" />
+    <param name="goal_x" value="0.0" />
+    <param name="goal_y" value="0.0" />
+    <param name="position_scale_factor" value="0.001" />
+    <param name="max_linear_velocity" value="0.3" />
+    <param name="max_angular_velocity" value="0.8" />
+    
+    <!-- Performance Configuration -->
+    <param name="goal_tolerance" value="0.1" />
+    <param name="log_performance" value="true" />
+  </node>
+</launch>
