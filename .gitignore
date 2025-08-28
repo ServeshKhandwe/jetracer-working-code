@@ -4,3 +4,6 @@ src/jetracer_ros
 
 error.txt
 error.txt
+.DS_Store
+openai_models.txt
+src/openai_mocap_controller.zip
